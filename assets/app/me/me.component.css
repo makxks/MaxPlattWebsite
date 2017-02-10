@@ -1,0 +1,22 @@
+div {
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+p {
+  padding: 10px;
+}
+
+a {
+  color: darkred;
+  text-decoration: underline;
+}
+
+a:link {
+  color: darkred;
+}
+
+a:hover {
+  color: red;
+}

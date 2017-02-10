@@ -1,0 +1,12 @@
+.webnav {
+  float:left;
+  height: 100%;
+  padding-right: 10px;
+  border-right: 1px black;
+  width: 150px;
+}
+
+.webnav li {
+  width: 150px;
+  text-align: right;
+}
