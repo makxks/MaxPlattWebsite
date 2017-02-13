@@ -23,6 +23,26 @@ import { GameHeaderComponent } from './game/gameheader.component';
 import { GameHomeComponent } from './game/gamehome.component';
 
 import { EruptionComponent } from './game/eruption/eruption.component';
+import { EruptionHeaderComponent } from './game/eruption/eruptionheader.component';
+import { EruptionDesignComponent } from './game/eruption/eruptiondesign.component';
+import { EruptionGameComponent } from './game/eruption/eruptiongame.component';
+
+import { MigrationComponent } from './game/migration/migration.component';
+import { MigrationHeaderComponent } from './game/migration/migrationheader.component';
+import { MigrationDesignComponent } from './game/migration/migrationdesign.component';
+import { MigrationGameComponent } from './game/migration/migrationgame.component';
+
+import { SurvivorComponent } from './game/survivor/survivor.component';
+import { SurvivorBlogComponent } from './game/survivor/survivorblog.component';
+import { SurvivorHeaderComponent } from './game/survivor/survivorheader.component';
+import { SurvivorDesignComponent } from './game/survivor/survivordesign.component';
+import { SurvivorGameComponent } from './game/survivor/survivorgame.component';
+
+import { SparkComponent } from './game/spark/spark.component';
+import { SparkBlogComponent } from './game/spark/sparkblog.component';
+import { SparkHeaderComponent } from './game/spark/sparkheader.component';
+import { SparkDesignComponent } from './game/spark/sparkdesign.component';
+import { SparkGameComponent } from './game/spark/sparkgame.component';
 
 import { routing } from './app.routing';
 
@@ -42,7 +62,24 @@ import { routing } from './app.routing';
 		GameHomeComponent,
 		LearningComponent,
 		ContactComponent,
-		EruptionComponent
+		EruptionComponent,
+		EruptionHeaderComponent,
+		EruptionDesignComponent,
+		EruptionGameComponent,
+		MigrationComponent,
+		MigrationHeaderComponent,
+		MigrationDesignComponent,
+		MigrationGameComponent,
+		SurvivorComponent,
+		SurvivorHeaderComponent,
+		SurvivorBlogComponent,
+		SurvivorDesignComponent,
+		SurvivorGameComponent,
+		SparkComponent,
+		SparkHeaderComponent,
+		SparkBlogComponent,
+		SparkDesignComponent,
+		SparkGameComponent
 	],
 	imports: [
 		BrowserModule,

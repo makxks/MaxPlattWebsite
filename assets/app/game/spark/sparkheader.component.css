@@ -1,0 +1,21 @@
+nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 85px;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color:gray;
+  text-decoration: none;
+}
