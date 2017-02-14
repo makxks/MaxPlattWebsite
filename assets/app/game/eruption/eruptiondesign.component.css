@@ -20,6 +20,20 @@
   margin: auto;
 }
 
+.images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.images, div{
+  margin: 10px;
+}
+
 h1 h3 {
   padding: 15px;
 }
