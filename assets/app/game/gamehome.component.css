@@ -1,0 +1,28 @@
+.games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top:0;
+  width: 75%;
+  margin: auto;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.paragraph {
+  margin: 10px;
+}
+
+.images, div{
+  margin: 10px;
+}
