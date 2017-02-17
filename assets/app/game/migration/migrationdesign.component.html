@@ -1,10 +1,173 @@
 <h1>Migration Design</h1>
 
 <div class="gameplay">
-  <h3>Gameplay</h3>
-  <p></p>
+  <div class="paragraph">
+    <h2>Gameplay</h2>
+    <p>Migration began as an idea for 1 animal, the bird. The goal was simply to reach the end of the level getting past all the obstacles and predators that lay in wait. Over time the other animals were added to provide a more varied experience. It is quite a casual game, the difficulty is not very high. To add an extra layer of challenge there is a star based scoring system. To unlock all the levels the player must simply complete the previous level (no stars required), and all animals are unlocked at the start.</p>
+  </div>
+
+  <div class="paragraph">
+    <h3>Fly</h3>
+  </div>
+
+  <div class="images">
+    <div>
+      <img src="/images/migration/birdSS.png" alt="bird level screenshot" height="300px">
+      <p>Screenshot from the first bird level</p>
+    </div>
+  </div>
+
+  <div class="paragraph">
+    <p>For the bird to complete the level it must reach the target nest at the end. This is marked with a semi-transparent blue cone to direct the player towards it when it is close, and the distance until the end of the level is shown on the bar at the bottom of the screen.</p>
+    <p>The bird can be controlled either by clicking to fly towards the point clicked, or by using WASD/arrow buttons to move. When the bird is in the air it's stamina drops slowly. Apples can be eaten to gain stamina, nuts flies and stars can be eaten for points (fish on the second level give both).</p>
+    <p>There are many obstacles for the bird.</p>
+    <p> The first level has only stamina and eagles (perhaps just predatory birds is a better way to describe them) as obstacles to progression. The eagles target the small bird when it is close enough and attack in straight lines, the small bird is very agile, so only when there are many predators is there any real danger, however the eagles deal very heavy damage, usually two hits is enough to completely deplete the small bird's health. There are semi-transparent red cones that show nearby eagles locations off the screen for added warning time.</p>
+    <p>On the second level stamina is a much bigger factor as there is a large body of water in between the bird and the goal. In this case there are fewer apples to pick up to replenish stamina, however the fish in the water can also give some stamina back (but getting into and out of the water takes an increased amount of stamina, so it is a little risky).</p>
+    <p>The final level has several more obstacles. The weather creates many obstacles. Areas of wind push the bird back through the level, lightning strikes do heavy damage if they hit the bird, and the rain obscures vision.</p>
+  </div>
+
+  <div class="paragraph">
+    <h3>Swim</h3>
+  </div>
+
+  <div class="images">
+    <div>
+      <img src="/images/migration/fishSS.png" alt="fish level screenshot" height="300px">
+      <p>Screenshot from the first fish level</p>
+    </div>
+  </div>
+
+  <div class="paragraph">
+    <p>The fish must simply swim to the end of the level to complete it. The idea for the fish is mainly taken from salmon, so the fish must swim past obstacles and also jump up waterfalls, all while the river pushes against him.</p>
+    <p>Each of the animals is controlled in a different way, so while the bird is controlled by clicking on a location, or using WASD/arrow keys, the fish swims with WASD/arrows and jumps using a slingshot style control. When the player holds down the left mouse button, a blue cone is shown to show the direction and power of the jump, this changes depending on where the mouse is positioned. A jump is started when the player releases the mouse button.</p>
+    <p>Similar to the bird there are many obstacles to overcome.</p>
+    <p>For the fish, stamina falls a little faster than the bird, part of this is due to the levels being a little shorter, and part of it is because the fish is always struggling against the current of the river. Jumping also takes extra stamina. In the first level, additional obstacles are waterfalls, seaweed, and bears. If the fish jumps or swims into a waterfall it pushes the fish back down the river quickly. The seaweed only slows the fish. Bears attack at set intervals, and only the paw that they are attacking with must be avoided, it completely depletes the fish's health if it hits, but has a small hit box and unless the bear is attacking there is no danger.</p>
+    <p>The subsequent levels add longer levels with more waterfall jumps, stronger currents in certain areas, and predatory fish.</p>
+    <p>Getting the right balance for the jumping control was difficult, as small changes would result often in the player being unable to jump up the waterfalls due to the jump being too weak, or oversimplifying the levels by simply being able to jump through almost the entire level in 2 jumps. After a lot of testing and modifying. I think that the final value works well and is not too close to the limit of effectiveness for jumping up the waterfalls so it is a little forgiving.</p>
+  </div>
+
+  <div class="paragraph">
+    <h3>Run</h3>
+  </div>
+
+  <div class="images">
+    <div>
+      <img src="/images/migration/runSS.png" alt="wildebeest screen shot" height="300px">
+      <p>Screenshot from first wildebeest level</p>
+    </div>
+  </div>
+
+  <div class="paragraph">
+    <p>The wildebeest (running animal modelled on a wildebeest...) has a similar goal to the fish, reach the end of the level.</p>
+    <p>The wildebeest is always moving, but his speed can be modified using AD/arrow keys and his position can be moved vertically with W and S/arrow keys. He can also sprint (at the cost of some extra stamina) to escape from predators when you click.</p>
+    <p>The obstacles for the wildebeest mainly consist of lions that chase and try to catch the wildebeest, they run slightly faster than the wildebeests top standard speed, but some sprinting can keep him safe.</p>
+    <p>There is also long grass which slows the wildebeest down, and if he runs into a rock he will fall over and stop for a moment before getting up and continuing, so these must be avoided carefully when the lions are close</p>
+    <p>In the final level the wildebeest must cross a river, and so he must watch out for crocodiles. The crocodiles are stationary, but (similar to the bears for the fish) their attacks deal huge damage and so must be avoided.</p>
+  </div>
+
 </div>
 
 <div class="artsound">
+
+  <div class="paragraph">
+    <h2>Audio and Visual</h2>
+  </div>
+
+  <div class="paragraph">
+    <h3>Player Animals</h3>
+  </div>
+
+  <div class="images">
+    <div>
+      <img src="/images/migration/animation2.gif" alt="small bird" height="150px">
+      <p>The Small Bird</p>
+    </div>
+    <div>
+      <img src="/images/migration/fishswim.gif" alt="fish" height="150px">
+      <p>The Fish</p>
+    </div>
+    <div>
+      <img src="/images/migration/wildebeest.gif" alt="wildebeest" height="150px">
+      <p>The Wildebeest</p>
+    </div>
+  </div>
+
+  <div class="paragraph">
+    <p>Here the three main animals can be seen. I drew and animated all the assets, and I wanted all of the main animals to be relatively simple, and quite rounded as I felt it gave them a slightly "cuter" more friendly appearance. I decided that all the creatures would have very few colors and a thin black outline to make them look bolder and cleaner.</p>
+  </div>
+
+  <div class="paragraph">
+    <h3>Enemies</h3>
+  </div>
+
+  <div class="images">
+    <div>
+      <img src="/images/migration/bigbirdfly1.gif" alt="enemy bird" height="150px">
+      <p>The Eagle</p>
+    </div>
+    <div>
+      <img src="/images/migration/bear.gif" alt="bear" height="150px">
+      <p>The Bear</p>
+    </div>
+    <div>
+      <img src="/images/migration/lion.gif" alt="lion" height="150px">
+      <p>The Lion</p>
+    </div>
+  </div>
+  <div class="images">
+    <div>
+      <img src="/images/migration/croc.gif" alt="crocodile" height="150px">
+      <p>The Crocodile</p>
+    </div>
+    <div>
+      <img src="/images/migration/enemyfish.gif" alt="enemy fish" height="150px">
+      <p>The Enemy Fish</p>
+    </div>
+  </div>
+
+  <div class="paragraph">
+    <p>The enemies all have the same single (few) colour, black outline style as the main animals, but they have more sharp edges, this can be seen clearly when comparing the player fish to the enemy fish. The predators (for the most part, the lion and crocodile are not much bigger than the wildebeest) are also larger than the player animals, to give an extra sense of danger.</p>
+  </div>
+
+  <div class="paragraph">
+    <h3>Menus</h3>
+  </div>
+
+  <div class="images">
+    <div>
+      <img src="/images/migration/flymenu.png" alt="bird menu" height="300px">
+      <p>Fly Menu</p>
+    </div>
+    <div>
+      <img src="/images/migration/swimmenu.png" alt="fish menu" height="300px">
+      <p>Swim Menu</p>
+    </div>
+    <div>
+      <img src="/images/migration/runmenu.png" alt="wildebeest menu" height="300px">
+      <p>Run Menu</p>
+    </div>
+  </div>
+
+  <div class="paragraph">
+    <p>Inside the menus for each animal I have tried to give an idea of what might be included in the levels. For example the bird map shows a large expanse of water on the second level, and the wildebeest map shows the river in the final level. There is help text on either side of the map advising of things to avoid and things to try to pick up, to represent these I simply decided to use the images of the different pickups and enemies so there was no ambiguity (the fly is included as a word as the flies are black). The map shows the starting points of the different levels, as well as being a map for the whole migration. The menu also shows your current progress through each migration, and the number of stars achieved on each level.</p>
+  </div>
+
+  <div class="paragraph">
+    <h3>Effects</h3>
+  </div>
+
+  <div class="paragraph">
+    <p>Some effects have been used to give extra visual cues for the action, and also just to try to make it prettier. There is a blood effect for whenever one of the animals is successfully attacked by a predator, and a splash effect just for the fish that is mainly only for an extra visual effect, but can also show the player when they have reentered the water.</p>
+  </div>
+
+  <div class="paragraph">
+    <h3>Sound</h3>
+  </div>
+
+  <div class="paragraph">
+    <p>With the exception of one sound (the bear, which was found on freesound.org and is credited in the game) I created all the sounds.</p>
+    <p>In the music for each level I tried to echo the animals and locations, the fish music has a slightly more aquatic feel to it, while the bird music is free and airy, and the wildebeest music uses more overall wooden instruments and instruments with an African feel. There is also danger music for when stamina or health are low, and this has much more urgency than the standard music.</p>
+    <p>For sound effect I kept everything relatively simple, some dull thuds for successful attacks from predators, and some more positive sounding audio feedback for pickups. There are two short sound effects/jingles that play depending on how the level ends, a falling sequence for a game over, and a rising positive sounding sequence on level completion.</p>
+  </div>
 
 </div>

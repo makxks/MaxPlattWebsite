@@ -30,3 +30,16 @@ h1 {
 p {
   margin: 6px;
 }
+
+a {
+  color: darkred;
+  text-decoration: underline;
+}
+
+a:link {
+  color: darkred;
+}
+
+a:hover {
+  color: red;
+}
