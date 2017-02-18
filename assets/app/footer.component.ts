@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 	selector: 'app-footer',
 	template: `
 		<footer>
-			<p>Max Platt</p>
+			<p>&#169 Max Platt 2017</p>
 			<p>Contact: <a href="maxplatt@outlook.com>maxplatt@outlook.com</a>
 		</footer>
 	`,
