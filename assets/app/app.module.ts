@@ -44,13 +44,13 @@ import { SparkHeaderComponent } from './game/spark/sparkheader.component';
 import { SparkDesignComponent } from './game/spark/sparkdesign.component';
 import { SparkGameComponent } from './game/spark/sparkgame.component';
 
-// import { RockLimeComponent } from './rocklime.component';
+import { RockLimeComponent } from './web/rocklime/rocklime.component';
 
-// import { MandarinLaneComponent } from './mandarinlane.component';
+import { MandarinLaneComponent } from './web/jasonwebsite/mandarinlane.component';
 
-// import { PatsStatsComponent } from './patsstats.component';
+import { PatsStatsComponent } from './web/patsstats/patsstats.component';
 
-// import { ChatAppComponent } from './chatapp.component';
+import { ChatAppComponent } from './web/chapp/chatapp.component';
 
 import { routing } from './app.routing';
 
@@ -87,11 +87,11 @@ import { routing } from './app.routing';
 		SparkHeaderComponent,
 		SparkBlogComponent,
 		SparkDesignComponent,
-		SparkGameComponent
-		//RockLimeComponent,
-		//MandarinLaneComponent
-		//PatsStatsComponent
-		//ChatAppComponent
+		SparkGameComponent,
+		RockLimeComponent,
+		MandarinLaneComponent,
+		PatsStatsComponent,
+		ChatAppComponent
 	],
 	imports: [
 		BrowserModule,
