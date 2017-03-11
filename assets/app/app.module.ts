@@ -52,6 +52,8 @@ import { PatsStatsComponent } from './web/patsstats/patsstats.component';
 
 import { ChatAppComponent } from './web/chapp/chatapp.component';
 
+//import { WeatherAppComponent } from './web/weather/weatherapp.component';
+
 import { routing } from './app.routing';
 
 @NgModule({
@@ -92,6 +94,7 @@ import { routing } from './app.routing';
 		MandarinLaneComponent,
 		PatsStatsComponent,
 		ChatAppComponent
+		//, WeatherAppComponent
 	],
 	imports: [
 		BrowserModule,
