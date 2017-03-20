@@ -93,7 +93,8 @@ import { routing } from './app.routing';
 		RockLimeComponent,
 		MandarinLaneComponent,
 		PatsStatsComponent,
-		ChatAppComponent, WeatherAppComponent
+		ChatAppComponent,
+		WeatherAppComponent
 	],
 	imports: [
 		BrowserModule,

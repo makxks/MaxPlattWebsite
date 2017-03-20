@@ -5,7 +5,7 @@ import { RockLimeComponent } from './rocklime/rocklime.component';
 import { MandarinLaneComponent } from './jasonwebsite/mandarinlane.component';
 import { PatsStatsComponent } from './patsstats/patsstats.component';
 import { ChatAppComponent } from './chapp/chatapp.component';
-import { WeatherAppComponent } from './weather/weatherapp.component;
+import { WeatherAppComponent } from './weather/weatherapp.component';
 
 export const WEB_ROUTES: Routes = [
 	{ path: '' , redirectTo: 'webhome', pathMatch: 'full' },
