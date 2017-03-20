@@ -9,8 +9,6 @@
   Users can enter any city and country around the world and check a detailed weather forecast for the next 24 hours, or a five day forecast, with details of temperature, humidity, pressure, wind, and a general description/icon (all the information comes from the openweathermap api). You can try it out here or click on the link in the title above to go directly to the page.
 </p>
 
-<iframe src="http://weathereverywhere.herokuapp.com/"></iframe>
-
 <p>
   I took the template and beginnings for the app from a Udemy course on React and Redux by Stephen Grider, but I wanted to extend it to make it more useful.
 </p>
@@ -18,5 +16,10 @@
   The original app from the Udemy course only included the graphs showing the weather trends for the next few days along with an average value (and only had a single input for a city in the US).
 </p>
 <p>
-  I decided to include a second input to make it global, and to show minimum and maximum values for the graphs. From there I wanted to show more information, and to actually make it into a more useable app for checking the weather forecast. So first I made a details table for a daily forecast using the openweathermap 5 day / 3 hour forecast, with the next 6 3 hour intervals shown, with temperature, pressure, humidity, and wind given along with an icon and a description. From there I wanted to make a forecast for the next few days, but as the openweathermap daily forecast is not free it was a little more difficult. I decided first to include maximum and minimum temperatures, along with average pressure, humidity and wind. After that it was just a case of adjusting the time of the first entry in the returned array according to the local system time (so that the correct times could be cycled through for the target time zone), and then either taking an average or finding the maximum or minimum value and adding it to the table.
+  I decided to include a second input to make it global, and to show minimum and maximum values for the graphs. From there I wanted to show more information, and to actually make it into a more useable app for checking the weather forecast. So first I made a details table for a daily forecast using the openweathermap 5 day / 3 hour forecast, with the next 6 3 hour intervals shown, with temperature, pressure, humidity, and wind given along with an icon and a description. From there I wanted to make a forecast for the next few days, but as the openweathermap daily forecast is not free it was a little more difficult. I decided first to include maximum and minimum temperatures, along with average pressure, humidity and wind.
 </p>
+<p>
+  After that it was just a case of adjusting the time of the first entry in the returned array according to the local system time (so that the correct times could be cycled through for the target time zone), and then either taking an average or finding the maximum or minimum value and adding it to the table.
+</p>
+
+<iframe src="http://weathereverywhere.herokuapp.com/"></iframe>
