@@ -42,7 +42,7 @@ export class AuthService {
 
   checkAdmin(userDetails){
 		const adminId = "HpSs3QseDCa17bHO9tHM4eEJqNH3";
-		isAdmin = false;
+		var isAdmin = false;
 
 		if (userDetails.uid == adminId){
 			isAdmin = true;
