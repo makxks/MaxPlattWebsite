@@ -15,3 +15,7 @@ input:invalid {
 input:valid {
   border: 1px solid green;
 }
+
+button {
+  margin-bottom: 10px;
+}

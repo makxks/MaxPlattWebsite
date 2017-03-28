@@ -1,5 +1,6 @@
 <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <input type="hidden" name="_subject" value="From Website!" />
     <div class="form-group">
       <label for="email">Your email</label>
       <input
@@ -17,8 +18,9 @@
         rows="10"
         id="message"
         class="form-control"
-        formControlName="message"></textarea>
+        formControlName="message"
+        required></textarea>
     </div>
-    <input class="btn btn-primary" type="submit" value="Send">
+    <button class="btn btn-primary" type="submit" value="Send" [disabled]="!myForm.valid"> Submit </button>
   </form>
 </div>
