@@ -17,6 +17,9 @@ export class AuthService {
       var errorCode = error.code;
       var errorMessage = error.message;
     });
+    firebase.auth().currentUser.updateProfile({
+      displayName: user.username
+    })
   }
 
   signinUser(user: User) {

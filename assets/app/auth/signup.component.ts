@@ -10,10 +10,13 @@ import { AuthService } from './auth.service';
         <div class="authFormContainer">
           <form [formGroup]="myForm" (ngSubmit)="onSignup()" class="authForm">
               <div class="form-group">
+                  <label for="username">Username</label>
+                  <input formControlName="username" type="text" id="username"class="form-control">
+              </div>
+              <div class="form-group">
                   <label for="email">E-Mail</label>
                   <input formControlName="email" type="email" id="email" #email class="form-control">
                   <span *ngIf="!email.pristine && email.errors != null && email.errors['noEmail']">Invalid mail address</span>
-
               </div>
               <div class="form-group">
                   <label for="password">Password</label>
@@ -45,6 +48,7 @@ export class SignupComponent implements OnInit {
 
     ngOnInit(): any {
         this.myForm = this.fb.group({
+            username: ['', Validators.required],
             email: ['', Validators.compose([
                 Validators.required,
                 this.isEmail
