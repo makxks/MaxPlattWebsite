@@ -1,0 +1,22 @@
+form {
+  width: 70%;
+}
+
+.authForm {
+  width: 70%;
+}
+
+.authFormContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 300px;
+  margin-top:0;
+}
+
+h3 {
+  margin: 5px;
+  margin-top: 15px;
+}

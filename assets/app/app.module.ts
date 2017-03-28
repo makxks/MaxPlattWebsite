@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
@@ -13,6 +15,8 @@ import { MeComponent } from './me/me.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { LearningComponent } from './learning/learning.component';
+
+import { AuthComponent } from './auth/auth.component';
 
 import { WebComponent } from './web/web.component';
 import { WebHeaderComponent } from './web/webheader.component';
@@ -56,6 +60,10 @@ import { WeatherAppComponent } from './web/weather/weatherapp.component';
 
 import { routing } from './app.routing';
 
+import { AuthService } from './auth/auth.service';
+import { AuthModule } from './auth/auth.module';
+import { ErrorService } from './errors/error.service';
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -94,11 +102,19 @@ import { routing } from './app.routing';
 		MandarinLaneComponent,
 		PatsStatsComponent,
 		ChatAppComponent,
-		WeatherAppComponent
+		WeatherAppComponent,
+		AuthComponent
 	],
 	imports: [
 		BrowserModule,
-		routing
+		routing,
+		HttpModule,
+		ReactiveFormsModule,
+		AuthModule
+	],
+	providers: [
+		AuthService,
+		ErrorService
 	],
 	bootstrap: [AppComponent]
 })
