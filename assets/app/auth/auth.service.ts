@@ -15,7 +15,12 @@ export class AuthService {
 
   signupUser(user: User) {
     firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
-      .then(function(returnedUser){this.writeUserData(returnedUser.uid, user.email, user.username)})
+      .then(function(data){
+        database.ref('users/' + data.uid).set({
+          username: user.username,
+          email: user.email
+        });
+      })
       .catch(function(error) {
       var errorCode = error.code;
       var errorMessage = error.message;
@@ -52,11 +57,4 @@ export class AuthService {
 		}
 		return isAdmin;
 	}
-
-  writeUserData(id, email, name) {
-    database.ref('users/' + id).set({
-      username: name,
-      email: email
-    });
-  }
 }
