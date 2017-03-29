@@ -11,7 +11,7 @@ import { AuthService } from './auth.service';
           <form [formGroup]="myForm" (ngSubmit)="onSignup()" class="authForm">
               <div class="form-group">
                   <label for="username">Username</label>
-                  <input formControlName="username" type="text" id="username"class="form-control">
+                  <input formControlName="username" type="text" id="username" class="form-control">
               </div>
               <div class="form-group">
                   <label for="email">E-Mail</label>
@@ -43,7 +43,6 @@ export class SignupComponent implements OnInit {
 
     onSignup() {
       this.authService.signupUser(this.myForm.value);
-      this.myForm.reset();
     }
 
     ngOnInit(): any {
