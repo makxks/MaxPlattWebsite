@@ -6,7 +6,7 @@ import { AuthService } from './auth.service';
 @Component({
     selector: 'auth-signup',
     template: `
-      <h3>Please sign up to use all features</h3>
+      <h3>Please sign in if you want to leave comments</h3>
       <div class="authFormContainer">
         <form [formGroup]="myForm" (ngSubmit)="onSignup()" class="authForm">
             <div class="form-group formInput" [ngClass]="{'has-error':!myForm.controls['username'].valid && myForm.controls['username'].touched}">
