@@ -62,7 +62,9 @@ import { routing } from './app.routing';
 
 import { AuthService } from './auth/auth.service';
 import { AuthModule } from './auth/auth.module';
+
 import { ErrorService } from './errors/error.service';
+import { ErrorComponent } from './errors/error.component';
 
 @NgModule({
 	declarations: [
@@ -103,7 +105,8 @@ import { ErrorService } from './errors/error.service';
 		PatsStatsComponent,
 		ChatAppComponent,
 		WeatherAppComponent,
-		AuthComponent
+		AuthComponent,
+		ErrorComponent
 	],
 	imports: [
 		BrowserModule,

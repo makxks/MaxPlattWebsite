@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers, Response } from '@angular/http';
 import 'rxjs/Rx';
 import { Observable } from 'rxjs';
 
@@ -11,7 +10,7 @@ var database = firebase.database();
 
 @Injectable()
 export class AuthService {
-  constructor(private http: Http, private errorService: ErrorService) {}
+  constructor(private errorService: ErrorService) {}
 
   signupUser(user: User) {
     firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
@@ -21,20 +20,22 @@ export class AuthService {
           email: user.email
         });
       })
-      .catch(function(error) {
+      .catch((error) => {
+        console.log(error);
         var errorCode = error.code;
         var errorMessage = error.message;
-        this.errorService.handleError(error.json());
-        return Observable.throw(error.json());
+        this.errorService.handleError(error.toJSON);
+        return Observable.throw(error.toJSON);
       });
   }
 
   signinUser(user: User) {
-    firebase.auth().signInWithEmailAndPassword(user.email, user.password).catch(function(error) {
+    firebase.auth().signInWithEmailAndPassword(user.email, user.password)
+    .catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
-      this.errorService.handleError(error.json());
-      return Observable.throw(error.json());
+      this.errorService.handleError(error.toJSON());
+      return Observable.throw(error.toJSON);
     });
   }
 
