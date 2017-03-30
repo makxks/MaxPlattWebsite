@@ -9,13 +9,15 @@ import { AuthService } from './auth.service';
         <h3>Please sign up if you want to leave comments</h3>
         <div class="authFormContainer">
           <form [formGroup]="myForm" (ngSubmit)="onSignin()" class="authForm">
-              <div class="form-group">
+              <div class="form-group formInput" [ngClass]="{'has-error':!myForm.controls['email'].valid && myForm.controls['email'].touched}">
                   <label for="email">E-Mail</label>
                   <input formControlName="email" type="email" id="email" class="form-control">
+                  <span *ngIf="!myForm.controls['email'].pristine && myForm.controls['email'].errors != null" class="errorMessage">Enter an email address</span>
               </div>
-              <div class="form-group">
+              <div class="form-group formInput" [ngClass]="{'has-error':!myForm.controls['password'].valid && myForm.controls['password'].touched}">
                   <label for="password">Password</label>
                   <input formControlName="password" type="password" id="password" class="form-control">
+                  <span *ngIf="!myForm.controls['password'].pristine && myForm.controls['password'].errors != null" class="errorMessage">Enter your password</span>
               </div>
               <button type="submit" [disabled]="!myForm.valid" class="btn btn-primary">Sign In</button>
           </form>

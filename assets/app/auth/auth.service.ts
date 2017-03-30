@@ -22,15 +22,19 @@ export class AuthService {
         });
       })
       .catch(function(error) {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-    });
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        this.errorService.handleError(error.json());
+        return Observable.throw(error.json());
+      });
   }
 
   signinUser(user: User) {
     firebase.auth().signInWithEmailAndPassword(user.email, user.password).catch(function(error) {
       var errorCode = error.code;
       var errorMessage = error.message;
+      this.errorService.handleError(error.json());
+      return Observable.throw(error.json());
     });
   }
 
