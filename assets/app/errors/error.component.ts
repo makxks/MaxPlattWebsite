@@ -6,16 +6,7 @@ import { Error } from "./error.model";
 @Component({
 	selector: 'app-error',
 	templateUrl: './error.component.html',
-	styles: [`
-		.backdrop {
-			background-color: rgba(0,0,0,0.6);
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100vh;
-		}
-	`]
+	styleUrls: ['./error.component.css']
 })
 
 export class ErrorComponent implements OnInit {
