@@ -4,3 +4,12 @@ iframe {
   padding: 10px 0;
   margin: 10px 0;
 }
+
+.blogHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 0;
+}

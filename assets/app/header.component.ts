@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
           <li routerLinkActive="active"><a [routerLink]="['/learning']">Learning</a></li>
           <li routerLinkActive="active"><a [routerLink]="['/me']">Me</a></li>
 					<li routerLinkActive="active"><a [routerLink]="['/contact']">Contact</a></li>
-					<li routerLinkActive="active"><a [routerLink]="['/auth']">Login</a></li>
+					<!--<li routerLinkActive="active"><a [routerLink]="['/auth']">Login</a></li>-->
 				</ul>
 			</nav>
 		</header>
