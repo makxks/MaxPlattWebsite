@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 	clicked: string = '';
 	selected: string = '';
-	imgPosition: number = 38;
+	imgPosition: number = 0;
 	leftSize: number = 50;
 	rightSize: number = 50;
 
@@ -84,7 +84,7 @@ export class AppComponent {
 	moveImageToLR(moveTo: number){
 		if(moveTo < this.imgPosition){
 			this.imgPosition -= 1;
-			document.getElementById("centreImage").style.left = this.imgPosition + "%";
+			document.getElementById("centreImages").style.left = this.imgPosition + "%";
 			if(this.imgPosition <= moveTo){
 				clearTimeout(animate);
 				return;
@@ -92,7 +92,7 @@ export class AppComponent {
 		}
 		else if (moveTo > this.imgPosition){
 			this.imgPosition += 1;
-			document.getElementById("centreImage").style.left = this.imgPosition + "%";
+			document.getElementById("centreImages").style.left = this.imgPosition + "%";
 			if(this.imgPosition >= moveTo){
 				clearTimeout(animate);
 				return;
@@ -104,13 +104,13 @@ export class AppComponent {
 
 	afterFade(name: string){
 		if(name == ""){
-			this.moveImageToLR(38);
+			this.moveImageToLR(0);
 		}
 		else if(name == "web"){	
-			this.moveImageToLR(-12);
+			this.moveImageToLR(-50);
 		}
 		else if(name == "game"){
-			this.moveImageToLR(88);	
+			this.moveImageToLR(50);
 		}
 		this.selected = this.clicked;
 		this.scaleBackgrounds(this.clicked);

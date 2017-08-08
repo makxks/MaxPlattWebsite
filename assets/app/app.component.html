@@ -8,16 +8,19 @@
 				</div>
 			</div>
 		</div>
-		<div class="right-background" id="right-bg" [ngClass]="{'clicked': clicked=='web'}" (click)="click('web')" [routerLink]="['/web']">
+		<div class="image" id="centreImages">
+			<img id="me-left" src="/images/me2.png" alt="me-left" height="800px">
+			<img id="me-right" src="/images/mehalfbw..png" alt="me-right" height="800px">
+		</div>
+		<div class="right-background" id="right-bg" [ngClass]="{'clicked': clicked=='web'}">
 			<div id="to-fade-right">
-				<h1>&#60;Web&#62;</h1>
+				<div class="logo-mask">
+					<img id="web-logo" src="/images/weblogo..png" (click)="click('web')" [routerLink]="['/web']">
+				</div>
 				<div class="web" *ngIf='selected=="web"'>
 					<web-header></web-header>
 				</div>
 			</div>
-		</div>
-		<div class="image" id="centreImage">
-			<img src="/images/migration/runSS.png" alt="wildebeest screen shot" height="300px">
 		</div>
 	</div>
 	<div id="body" [ngStyle]="{'display':selected?'block':'none'}">
@@ -25,4 +28,5 @@
 	</div>
 	<app-footer></app-footer>
 </div>
+
 <app-error></app-error>

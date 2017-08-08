@@ -6,17 +6,3 @@ h1 {
   padding: 5px;
   padding-top: 10px;
 }
-
-a {
-  color: white;
-}
-
-a:link {
-  color:white;
-  text-decoration: none;
-}
-
-a:hover {
-  color:gray;
-  text-decoration: none;
-}
