@@ -35,7 +35,7 @@ import { AuthService } from './auth.service';
     `,
   	styleUrls: ['./signup.component.css']
 })
-export class SignupComponent implements OnInit {
+export class SignupComponent {
     myForm: FormGroup;
     error = false;
     errorMessage = '';
@@ -43,50 +43,4 @@ export class SignupComponent implements OnInit {
     constructor(private fb: FormBuilder, private authService: AuthService) {
     }
 
-    onSignup() {
-      this.authService.signupUser(this.myForm.value);
-    }
-
-    ngOnInit(): any {
-        this.myForm = this.fb.group({
-            username: ['', Validators.compose([
-              Validators.required,
-              this.checkUsername
-            ])],
-            email: ['', Validators.compose([
-                Validators.required,
-                this.isEmail
-            ])],
-            password: ['', Validators.compose([
-              Validators.required,
-              Validators.minLength(6)
-            ])],
-            confirmPassword: ['', Validators.compose([
-                Validators.required,
-                this.isEqualPassword.bind(this)
-            ])],
-        });
-    }
-
-    isEmail(control: FormControl): {[s: string]: boolean} {
-        if (!control.value.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
-            return {noEmail: true};
-        }
-    }
-
-    checkUsername(control:FormControl): {[s: string]: boolean} {
-      if (!control.pristine && control.value == "") {
-        return {noUsername: true};
-      }
-    }
-
-    isEqualPassword(control: FormControl): {[s: string]: boolean} {
-        if (!this.myForm) {
-            return {passwordsNotMatch: true};
-
-        }
-        if (control.value !== this.myForm.controls['password'].value) {
-            return {passwordsNotMatch: true};
-        }
-    }
 }

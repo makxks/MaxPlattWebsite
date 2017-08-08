@@ -25,22 +25,10 @@ import { AuthService } from './auth.service';
     `,
   	styleUrls: ['./signin.component.css']
 })
-export class SigninComponent implements OnInit {
+export class SigninComponent {
     myForm: FormGroup;
     error = false;
     errorMessage = '';
 
     constructor(private fb: FormBuilder, private authService: AuthService) {}
-
-    onSignin() {
-      this.authService.signinUser(this.myForm.value);
-      this.myForm.reset();
-    }
-
-    ngOnInit() {
-        this.myForm = this.fb.group({
-            email: ['', Validators.required],
-            password: ['', Validators.required],
-        });
-    }
 }

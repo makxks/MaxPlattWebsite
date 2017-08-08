@@ -1,5 +1,28 @@
 <div class="container">	
-	<router-outlet></router-outlet>
+	<div class="home">
+		<div class="left-background" id="left-bg" [ngClass]="{'clicked': clicked=='game'}" (click)="click('game')" [routerLink]="['/games']">
+			<div id="to-fade-left">
+				<h1>Game</h1>
+				<div class="game" *ngIf='selected=="game"'>
+					<game-header></game-header>
+				</div>
+			</div>
+		</div>
+		<div class="right-background" id="right-bg" [ngClass]="{'clicked': clicked=='web'}" (click)="click('web')" [routerLink]="['/web']">
+			<div id="to-fade-right">
+				<h1>&#60;Web&#62;</h1>
+				<div class="web" *ngIf='selected=="web"'>
+					<web-header></web-header>
+				</div>
+			</div>
+		</div>
+		<div class="image" id="centreImage">
+			<img src="/images/migration/runSS.png" alt="wildebeest screen shot" height="300px">
+		</div>
+	</div>
+	<div id="body" [ngStyle]="{'display':selected?'block':'none'}">
+		<router-outlet></router-outlet>
+	</div>
 	<app-footer></app-footer>
 </div>
 <app-error></app-error>

@@ -18,7 +18,7 @@ const APP_ROUTES: Routes = [
 	{ path: 'games', component: GameComponent, children: GAME_ROUTES },
 	{ path: 'web', component: WebComponent, children: WEB_ROUTES },
 	{ path: 'learning', component: LearningComponent },
-  { path: 'me', component: MeComponent },
+  	{ path: 'me', component: MeComponent },
 	{ path: 'contact', component: ContactComponent },
 	{ path: 'auth', component: AuthComponent, children: AUTH_ROUTES }
 ];

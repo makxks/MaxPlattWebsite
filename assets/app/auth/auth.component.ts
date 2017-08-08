@@ -25,12 +25,4 @@ import { AuthService } from './auth.service';
 
 export class AuthComponent {
 	constructor(private authService: AuthService) {}
-
-	isAuth() {
-		return this.authService.isAuthenticated();
-	}
-
-	onLogout() {
-		this.authService.logout();
-	}
 }

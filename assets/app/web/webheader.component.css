@@ -1,6 +1,6 @@
 .webnav {
-  float:left;
-  height: 1000px;
+  float: left;
+  height: 300px;
   width: 15%;
 }
 
@@ -11,6 +11,9 @@ ul {
 .webnav li {
   text-align: right;
   width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
 }
 
 a{
@@ -18,7 +21,12 @@ a{
   text-decoration: none;
 }
 
-a:hover{
-  color:gray;
+li:hover{
+  color:white;
   text-decoration: none;
+  background-color: black;
+}
+
+a:hover {
+  color: white;
 }
