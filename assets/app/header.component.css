@@ -1,31 +1,48 @@
 .row {
   width: 100%;
-  padding: 5px 0;
   margin: 0 0 -10px 0;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+}
+
+.logo {
+  min-width: 40%;
 }
 
 nav {
   margin: 0;
   padding: 0;
-  float: right;
+  width: 100%;
 }
 
 .nav-item {
-  float: left;
+  float: right;
 }
 
 ul {
   padding-top: 11px;
   font-size: 14px;
   margin-bottom: 0;
+  float: right;
 }
 
-a{
+li {
+  background-color: black;
   color: white;
   text-decoration: none;
+  padding: 10px 5px 10px 5px;
+  border-radius: 1px;
+  margin-top: -10px;
 }
 
-a:hover{
-  color:gray;
+li:hover {
   text-decoration: none;
+  color: gray;
+}
+
+a {
+  color: inherit;
 }

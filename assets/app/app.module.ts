@@ -9,14 +9,14 @@ import { LogoComponent } from './logo.component';
 import { FooterComponent } from './footer.component';
 
 import { HomeComponent } from './home/home.component';
+import { GameIntroComponent } from './home/gameintro.component';
+import { WebIntroComponent } from './home/webintro.component';
 
 import { MeComponent } from './me/me.component';
 
 import { ContactComponent } from './contact/contact.component';
 
 import { LearningComponent } from './learning/learning.component';
-
-import { AuthComponent } from './auth/auth.component';
 
 import { WebComponent } from './web/web.component';
 import { WebHeaderComponent } from './web/webheader.component';
@@ -30,6 +30,7 @@ import { EruptionComponent } from './game/eruption/eruption.component';
 import { EruptionHeaderComponent } from './game/eruption/eruptionheader.component';
 import { EruptionDesignComponent } from './game/eruption/eruptiondesign.component';
 import { EruptionGameComponent } from './game/eruption/eruptiongame.component';
+import { EruptionIntroComponent } from './game/eruption/eruptionintro.component';
 
 import { MigrationComponent } from './game/migration/migration.component';
 import { MigrationHeaderComponent } from './game/migration/migrationheader.component';
@@ -50,18 +51,11 @@ import { SparkGameComponent } from './game/spark/sparkgame.component';
 
 import { RockLimeComponent } from './web/rocklime/rocklime.component';
 
-import { MandarinLaneComponent } from './web/jasonwebsite/mandarinlane.component';
-
-import { PatsStatsComponent } from './web/patsstats/patsstats.component';
-
 import { ChatAppComponent } from './web/chapp/chatapp.component';
 
 import { WeatherAppComponent } from './web/weather/weatherapp.component';
 
 import { routing } from './app.routing';
-
-import { AuthService } from './auth/auth.service';
-import { AuthModule } from './auth/auth.module';
 
 import { ErrorService } from './errors/error.service';
 import { ErrorComponent } from './errors/error.component';
@@ -73,6 +67,8 @@ import { ErrorComponent } from './errors/error.component';
 		LogoComponent,
 		FooterComponent,
 		HomeComponent,
+		GameIntroComponent,
+		WebIntroComponent,
 		MeComponent,
 		WebComponent,
 		WebHeaderComponent,
@@ -86,6 +82,7 @@ import { ErrorComponent } from './errors/error.component';
 		EruptionHeaderComponent,
 		EruptionDesignComponent,
 		EruptionGameComponent,
+		EruptionIntroComponent,
 		MigrationComponent,
 		MigrationHeaderComponent,
 		MigrationDesignComponent,
@@ -101,22 +98,17 @@ import { ErrorComponent } from './errors/error.component';
 		SparkDesignComponent,
 		SparkGameComponent,
 		RockLimeComponent,
-		MandarinLaneComponent,
-		PatsStatsComponent,
 		ChatAppComponent,
 		WeatherAppComponent,
-		AuthComponent,
 		ErrorComponent
 	],
 	imports: [
 		BrowserModule,
 		routing,
 		HttpModule,
-		ReactiveFormsModule,
-		AuthModule
+		ReactiveFormsModule
 	],
 	providers: [
-		AuthService,
 		ErrorService
 	],
 	bootstrap: [AppComponent]

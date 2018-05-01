@@ -1,4 +1,32 @@
-
-
-
-
+<div class="home">
+  <div id="to-fade-left">
+    <div class="logo-mask" id="game-mask">
+      <img id="game-logo" src="/images/gamelogoroundbig.png" [ngClass]="{'clicked': clicked=='game'}" (click)="click('game')">
+    </div>
+  </div>
+  <div id="centreImages">
+    <div id="left-bg">
+      <img class="image" id="me-left" src="/images/me2.png" height="960px">
+    </div>
+    <div id="right-bg">
+      <img class="image" id="me-right" src="/images/mehalfbw..png" height="960px">
+    </div>
+  </div>
+  <div id="to-fade-right">
+    <div class="logo-mask" id="web-mask">
+      <img id="web-logo" src="/images/weblogo..png" [ngClass]="{'clicked': clicked=='web'}" (click)="click('web')">
+    </div>
+  </div>
+  <div id="body">
+    <div id="game-content" *ngIf="clicked == 'game'">
+      <game-header></game-header>
+      <div class="contents">
+        <app-game></app-game>
+        <div id="testScrollbar">
+        </div>
+      </div>
+    </div>
+    <div id="web-content" *ngIf="clicked == 'web'">
+    </div>
+  </div>
+</div>
