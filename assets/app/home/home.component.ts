@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
 
-import { GameComponent } from '../game/game.component';
-import { GameHeaderComponent } from '../game/gameheader.component';
+import { GameIntroComponent } from './gameintro.component';
+import { GameHeaderComponent } from './gameheader.component';
+
+import { WebIntroComponent } from './webintro.component';
+import { WebHeaderComponent } from './webheader.component';
+
+import { HomeService } from './home.service';
 
 @Component ({
 	selector: 'app-home',
@@ -16,6 +21,7 @@ export class HomeComponent {
 	leftSize: number = -50;
 	rightSize: number = -50;
 
+	constructor(private homeService: HomeService){}
 	//resize elements to focus on clicked element
 	click(name: string){
 		if(name == this.clicked){
@@ -37,6 +43,8 @@ export class HomeComponent {
 			document.getElementById("body").style.left = "15%";
 			this.fade(document.getElementById("to-fade-right"), this.clicked);
 		}
+		this.homeService.selectedGame = "";
+		this.homeService.selectedWebsite = "";
 	}
 	//all needs to be scalable
 

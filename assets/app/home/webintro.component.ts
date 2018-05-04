@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { HomeService } from './home.service';
+
 @Component ({
 	selector: 'home-webintro',
 	templateUrl: './webintro.component.html',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 
 export class WebIntroComponent {
+	constructor(private homeService: HomeService){}
 }

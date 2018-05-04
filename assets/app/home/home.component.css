@@ -81,10 +81,6 @@
 	background-color: #000000;
 }
 
-#testScrollbar {
-  min-height: 1000px;
-}
-
 #web-logo {
     position: absolute;
     z-index: 1;

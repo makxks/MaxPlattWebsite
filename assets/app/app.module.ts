@@ -10,7 +10,10 @@ import { FooterComponent } from './footer.component';
 
 import { HomeComponent } from './home/home.component';
 import { GameIntroComponent } from './home/gameintro.component';
+import { GameHeaderComponent } from './home/gameheader.component';
 import { WebIntroComponent } from './home/webintro.component';
+import { WebHeaderComponent } from './home/webheader.component';
+import { HomeService } from './home/home.service';
 
 import { MeComponent } from './me/me.component';
 
@@ -19,11 +22,9 @@ import { ContactComponent } from './contact/contact.component';
 import { LearningComponent } from './learning/learning.component';
 
 import { WebComponent } from './web/web.component';
-import { WebHeaderComponent } from './web/webheader.component';
 import { WebHomeComponent } from './web/webhome.component';
 
 import { GameComponent } from './game/game.component';
-import { GameHeaderComponent } from './game/gameheader.component';
 import { GameHomeComponent } from './game/gamehome.component';
 
 import { EruptionComponent } from './game/eruption/eruption.component';
@@ -109,7 +110,8 @@ import { ErrorComponent } from './errors/error.component';
 		ReactiveFormsModule
 	],
 	providers: [
-		ErrorService
+		ErrorService,
+		HomeService
 	],
 	bootstrap: [AppComponent]
 })

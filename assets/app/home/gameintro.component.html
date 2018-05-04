@@ -1,1 +1,21 @@
-<h1>Component to load from routing</h1>
+<h1>Games</h1>
+
+<section *ngIf="this.homeService.selectedGame == ''">
+<p>Nothing</p>
+</section>
+
+<section *ngIf="this.homeService.selectedGame == 'spark'">
+<p>Spark</p>
+</section>
+
+<section *ngIf="this.homeService.selectedGame == 'network'">
+<p>Network</p>
+</section>
+
+<section *ngIf="this.homeService.selectedGame == 'eruption'">
+<p>Eruption</p>
+</section>
+
+<section *ngIf="this.homeService.selectedGame == 'survivor'">
+<p>Survivor</p>
+</section>
