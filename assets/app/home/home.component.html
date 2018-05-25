@@ -19,12 +19,16 @@
   </div>
   <div id="body">
     <div id="game-content" *ngIf="clicked == 'game'">
-      <game-header></game-header>
       <div class="contents">
         <home-gameintro></home-gameintro>
       </div>
+      <game-header></game-header>
     </div>
     <div id="web-content" *ngIf="clicked == 'web'">
+      <web-header></web-header>
+      <div class="contents">
+        <home-webintro></home-webintro>
+      </div>
     </div>
   </div>
 </div>

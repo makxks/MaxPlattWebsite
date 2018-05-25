@@ -35,12 +35,12 @@ export class HomeComponent {
 		}
 		else if(name == "web"){
 			this.clicked = name;
-			document.getElementById("body").style.left = "30%";
+			document.getElementById("body").style.left = "12%";
 			this.fade(document.getElementById("to-fade-left"), this.clicked);
 		}
 		else if(name == "game"){
 			this.clicked = name;
-			document.getElementById("body").style.left = "15%";
+			document.getElementById("body").style.left = "25%";
 			this.fade(document.getElementById("to-fade-right"), this.clicked);
 		}
 		this.homeService.selectedGame = "";

@@ -1,12 +1,14 @@
 .webnav {
-  height: 300px;
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 10%;
   display: flex;
   flex-direction: column;
   justify-content: right;
   align-items: right;
-  margin-left: 10%;
-  width: 100%;
-  min-width: 100%;
+  z-index: 100;
+  margin-right: 2%;
 }
 
 ul {
@@ -24,7 +26,7 @@ nav {
 }
 
 .webnav li {
-  text-align: left;
+  text-align: right;
   width: 150px;
   border-radius: 10px;
   background-color: white;

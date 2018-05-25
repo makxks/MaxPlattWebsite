@@ -1,0 +1,7 @@
+section {
+  text-align: center;
+}
+
+p:last-child {
+  margin-top: 40px;
+}

@@ -16,8 +16,7 @@ const APP_ROUTES: Routes = [
 	{ path: 'games', component: GameComponent, children: GAME_ROUTES },
 	{ path: 'web', component: WebComponent, children: WEB_ROUTES },
 	{ path: 'learning', component: LearningComponent },
-  { path: 'me', component: MeComponent },
-	{ path: 'contact', component: ContactComponent }
+  { path: 'me', component: MeComponent }
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);

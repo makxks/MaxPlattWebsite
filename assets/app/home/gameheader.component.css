@@ -2,8 +2,9 @@
   position: relative;
   float: left;
   height: 100%;
+  width: 10%;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: right;
   align-items: right;
   z-index: 100;
@@ -20,7 +21,7 @@ ul {
 }
 
 .gamenav li {
-  text-align: right;
+  text-align: left;
   width: 150px;
   border-radius: 10px;
   background-color: white;

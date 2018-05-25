@@ -1,1 +1,9 @@
-<h1>From web</h1>
+<h1>Web</h1>
+
+<section *ngIf="this.homeService.selectedWebsite == ''">
+<p>Nothing</p>
+</section>
+
+<section *ngIf="this.homeService.selectedWebsite == 'classtracker'">
+<p>First Leap Lesson App</p>
+</section>
