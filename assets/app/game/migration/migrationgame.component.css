@@ -1,7 +1,3 @@
-.body {
-  width: 100%
-}
-
 .gamewindow {
 	width: 100%;
 	margin:auto;
@@ -12,12 +8,6 @@
   width: 990px;
   margin: auto;
 }
-
-iframe {
-  padding: 20px;
-	text-align: center;
-}
-
 .introduction {
   width: 75%;
   margin: auto;

@@ -31,7 +31,6 @@ import { EruptionComponent } from './game/eruption/eruption.component';
 import { EruptionHeaderComponent } from './game/eruption/eruptionheader.component';
 import { EruptionDesignComponent } from './game/eruption/eruptiondesign.component';
 import { EruptionGameComponent } from './game/eruption/eruptiongame.component';
-import { EruptionIntroComponent } from './game/eruption/eruptionintro.component';
 
 import { MigrationComponent } from './game/migration/migration.component';
 import { MigrationHeaderComponent } from './game/migration/migrationheader.component';
@@ -87,7 +86,6 @@ import { ErrorComponent } from './errors/error.component';
 		EruptionHeaderComponent,
 		EruptionDesignComponent,
 		EruptionGameComponent,
-		EruptionIntroComponent,
 		MigrationComponent,
 		MigrationHeaderComponent,
 		MigrationDesignComponent,
