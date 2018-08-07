@@ -38,6 +38,11 @@ import { MigrationHeaderComponent } from './game/migration/migrationheader.compo
 import { MigrationDesignComponent } from './game/migration/migrationdesign.component';
 import { MigrationGameComponent } from './game/migration/migrationgame.component';
 
+import { NetworkComponent } from './game/network/network.component';
+import { NetworkHeaderComponent } from './game/network/networkheader.component';
+import { NetworkDesignComponent } from './game/network/networkdesign.component';
+import { NetworkGameComponent } from './game/network/networkgame.component';
+
 import { SurvivorComponent } from './game/survivor/survivor.component';
 import { SurvivorBlogComponent } from './game/survivor/survivorblog.component';
 import { SurvivorHeaderComponent } from './game/survivor/survivorheader.component';
@@ -45,7 +50,6 @@ import { SurvivorDesignComponent } from './game/survivor/survivordesign.componen
 import { SurvivorGameComponent } from './game/survivor/survivorgame.component';
 
 import { SparkComponent } from './game/spark/spark.component';
-import { SparkBlogComponent } from './game/spark/sparkblog.component';
 import { SparkHeaderComponent } from './game/spark/sparkheader.component';
 import { SparkDesignComponent } from './game/spark/sparkdesign.component';
 import { SparkGameComponent } from './game/spark/sparkgame.component';
@@ -88,6 +92,10 @@ import { ErrorComponent } from './errors/error.component';
 		MigrationHeaderComponent,
 		MigrationDesignComponent,
 		MigrationGameComponent,
+		NetworkComponent,
+		NetworkHeaderComponent,
+		NetworkDesignComponent,
+		NetworkGameComponent,
 		SurvivorComponent,
 		SurvivorHeaderComponent,
 		SurvivorBlogComponent,
@@ -95,7 +103,6 @@ import { ErrorComponent } from './errors/error.component';
 		SurvivorGameComponent,
 		SparkComponent,
 		SparkHeaderComponent,
-		SparkBlogComponent,
 		SparkDesignComponent,
 		SparkGameComponent,
 		RockLimeComponent,
