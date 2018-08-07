@@ -4,10 +4,67 @@
 </div>
 
 <div class="gameplay">
-  <h3>Gameplay</h3>
-  <p></p>
+  <div class="title">
+    <h3>Gameplay</h3>
+  </div>
+  <div class="paragraph">
+    <p>The gameplay of Spark mainly grew from ideas based on circles or rings and "charge". I tried a lot of different approaches with both of these main components. I experimented with a lot of different ways of using the circles, how to move the Spark (a small sphere of charge) and how the charge would diminish or grow. Eventually I settled on using rings themselves laid out in circular sets, with the object of the game to jump forwards across as many of these circles as possible (moving diminishes the charge on the Spark) before the charge is exhausted.</p>
+  </div>
+  <div class="images">
+    <div>
+      <img src="/images/Spark/1..png" alt="Starting position" height="200px">
+      <p>Starting position</p>
+    </div>
+    <div>
+      <img src="/images/Spark/6..png" alt="Later in game position" height="200px">
+      <p>Mid-game position</p>
+  </div>
+  <div class="paragraph">
+    <h3>Basic Gameplay</h3>
+    <p>The game starts with only 1 green ring. The Spark is clearly visible at the top of the ring. When the Spark moves between rings the one that it is on at any point is the active ring and the only one that can be rotated, this ring shows up in green unless the ring has some other attribute the player needs to know about. Further rings are visible ahead and provide the route for the player. Each ring may have any number of pieces missing, sometimes even complete rings are missing (once there is more than one set).</p>
+    <p>The number of rings in each set slowly increases as the player moves forward. rings in the active set that the Spark is not on are yellow, to show that the player can transfer sideways to those rings. The increase in the number of rings in each set steadily provides an increased number of paths to advance by, however, periodically there are gates that can partially recharge the Spark, and these will only cover one route, and so as the number of rings in the set increase the amount of necessary sideways movement, and also charge used, increases, raising the difficulty.</p>
+  </div>
+  <div class="images">
+    <div>
+      <img src="/images/Spark/8..png" alt="A blue ring and a gate" height="200px">
+      <p>Blue ring and a gate</p>
+    </div>
+  </div>
+  <div class="paragraph">
+    <h3>Rings and Gates</h3>
+    <p>The gates are very clearly visible as they are the only shape that deviates from the circular motif. Early on in the game while there are only a few rings per set, the player can move quickly and easily picking up extra charge from several gates in a row. As the gates become more spaced out there is a greater distance and therefore charge used to reach each gate. So the player must make a decision of whether to travel further and pass through the gate, or simply travel forward in a straight line.</p>
+    <p>There are several kinds of rings. As previously mentioned the active ring is green and can be moved. Rings in the active set are yellow and can be moved to sideways. There are 4 further types of ring.</p>
+    <p>Orange rings - standard rings outside of the active set</p>
+    <p>Blue rings - rings that cannot be rotated</p>
+    <p>Purple rings - rings that slowly rotate themselves and cannot be controlled</p>
+    <p>Light green rings - these rings will explode if the charge is on them for too long (time left shown by the rate the ring flashes)</p>
+    <p>These different kinds of rings and the increasing distance to reach each gate provides a steady increase in challenge. In order to stop this from becoming too frustrating or boring the speed of the game and the short session time mean that each game is short and so losses are not as frustrating as the player can very quickly try again and again, sometimes several times within 5 minutes. This speed and session time lends itself to mobile gaming and I am currently working on a mobile version.</p>
+  </div>
 </div>
 
 <div class="artsound">
+  <div class="paragraph">
+    <h2>Audio and Visual</h2>
+    <p>To follow with the idea of "charge" I decided to try to implement a bold colour scheme with lots of glowing effects. The glow of the Spark itself work as a UI, with the size of the Spark showing how much charge is left. I tried to use bold contrasting colours so that the different ring types could be easily distinguished throughout the game.</p>
+  </div>
+  <div class="images">
+    <div>
+      <img src="/images/Spark/7..png" alt="Mid-game position" height="200px">
+      <p>This image shows a game position part way through a game. Several different types of rings can be seen - the green active ring along with some yellow rings in the active set. A blue ring and a small piece of a light green ring can be seen close by to the bottom left, along with some purple rings further ahead. 3 gates can be seen ahead.</p>
+    </div>
+  </div>
+  <div class="paragraph">
+    <p>The bright colours can get in the way a little as the number of ring sets grows, but the route ahead can always be clearly seen with possible options to either side usually clearly visible as well.</p>
+    <p>The gates can be seen very clearly in the above image due to their bright white sides and square shape.</p>
+    <p>The only visible UI features (except for the Spark), are the current points in the top left and the pause button in the top right. I wanted to keep the screen as clear as possible to focus on the Spark, the rings, and the colours, and I think it all works well together.</p>
+  </div>
+  <div class="paragraph">
+    <p>The aim of the in game music was to provide some rhythmic background music that would not be too overly energetic. Due to the nature of the game, and the possibility to play either recklessly and fast or slow and carefully, I thought a light and rhythmic background sound would suit it best. This music continues across the short play throughs and provides extra continuity and I think it further diminishes any sense of frustration from the end of each game.</p>
+    <p>I tried to make the sound effects as satisfying as possible, with clear bell sounds each time a ring is rotated, and positive, light sounds for the movement of the spark to a new set, and the charging of the Spark through gates. Keeping with this I tried to make the loss sound as smooth as possible, a simple deep bass sound to communicate the loss of charge of the Spark to keep the feeling and flow of the game without any jarring or sudden unexpected sounds. I feel this works well as due to the Spark showing how much charge is left there is not often an unexpected end of game, so I felt there was no need to provide a different kind of sound for that occurrence.</p>
+  </div>
+
+  <div class="paragraph">
+    <p>Overall I think that the gameplay is quite successful. It provides short bursts of smooth colourful gameplay in a simple and hopefully understandable way. The only thing that I hope to improve in the future is the addition of a mobile version of the game. This provides some different challenges, mostly in the controls, but also in the graphics of the game.</p>
+  </div>
 
 </div>
