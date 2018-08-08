@@ -4,10 +4,46 @@
 </div>
 
 <div class="gameplay">
-  <h3>Gameplay</h3>
-  <p></p>
+  <div class="title">
+    <h3>Gameplay</h3>
+  </div>
+  <div class="paragraph">
+    <p>The gameplay of Network was conceived from a very simplified view of data transfer across the internet. I first started thinking about a game based around this concept while playing online games (and losing connection). I used the concept and term of "packets" and decided to make a simple puzzle game based on delivery of these packets across nodes to their destination.</p>
+  </div>
+  <div class="images">
+    <img src="/images/Network/1..png" alt="In game position" height="200px">
+    <p>An in game screenshot</p>
+  </div>
+  <div class="paragraph">
+    <h3>Basic Gameplay</h3>
+    <p>The screenshot shows most features of the game. The black spots are nodes, and each node is connected to at least 1 other node by a link. Each node can hold several packets. The number of packets held is shown above each node. The player can click on the node to see a small menu that pops up next to the clicked node. This menu shows the size of each packet (bigger packets move more slowly). By clicking on a packet the player can then find the packets destination denoted by an arrow above the destination node. Nodes that the currently selected node can send packets to pulse so that they can easily be seen. Each link can only hold one packet at a time, so large packets on a long link can potentially slow the players progress.</p>
+    <p>There is a standard game mode, with a medium sized field and 20 packets, and there is a custom mode where the player can set the size of the field (number of nodes) and the number of packets to be delivered. The standard game mode lasts around 10 minutes, however a large custom game can last much longer. The game is complete in either mode once all packets have been delivered to their destinations.</p>
+    <p>I made several adjustments to the playability of the game while testing. I made the camera more mobile and added zooming in and out, while adding a central area in which the mouse position would not move the camera. I also made the clickable area around each node slightly larger. All of these changes made selection of nodes easier. I moved the node menu next to each node as before this it was not always clear which node was selected (despite a pulse on that node).</p>
+    <p>I think the gameplay works well however I think that I may revisit it to try to adjust the pace of the game, perhaps by making the packets travel a little faster or further adjusting the camera speed and node displays so that the player can even more quickly discern the different information and make a decision and act on it.</p>
+  </div>
 </div>
 
 <div class="artsound">
+  <div class="paragraph">
+    <h2>Audio and Visual</h2>
+    <p>I kept a minimalist approach throughout the design of the visuals and the audio. The game basically exists as UI elements and these UI elements are the only visible elements of the game. I decided to keep everything black with a simple light background to keep the idea of the packets and the delivery abstract, so the player can imagine them as physical packages, data packages, or whatever they like.</p>
+  </div>
+  <div class="images">
+    <div>
+      <img src="/images/Network/menu.png" alt="Network Menu" height="200px">
+      <p>Network main menu</p>
+    </div>
+  </div>
+  <div class="paragraph">
+    <p>To provide visual cues as to the status of each node at any time I used several small animations. The selected node has a pulsing ring around it, while those that can be delivered too simply puls (grow bigger and smaller). The number of packets on the node is displayed as a number above the node. I chose a small menu of buttons placed next to the node to show the packet details on that node as it was a simple and very identifiable way of showing the information. The packets are displayed as smaller black circles that travel along the links, they can be distinguished from the nodes in two ways: they move and they lack numbers above them. Finally the destination for the selected packet is shown by a small pulsing arrow above the destination node.</p>
+    <p>I feel that the menu of the game is quite successful. As the buttons used in the menu are the same as the nodes in the game I tried to keep a consistent approach and have the different sections of the menu as destinations linked to these buttons. As a button is pressed the camera follows a packet to the destination menu node. Once the player is finished at that menu and chooses to return the packet travels back and camera once again follows. The main menu is often the first part of a game that the player sees, and I feel that the menu in this game provides a good idea of what is to come. The custom game menu uses nodes on links as sliders to select the different options, this could be unclear at first glance but I like the consistency and it is usually figured out very quickly or within a few clicks.</p>
+  </div>
+  <div class="paragraph">
+    <p>The audio in the game also follows the minimalism of the visuals. I created a few small sound effects, clear fast delivery sounds, and clicks for the menus to give quick feedback on delivered packets and selected buttons. There is only 1 in game music track, this track has the same kind of feel as the sound effects and I think it helps add to the experience by adding something rhythmic and pulsing with just enough variation to not be boring.</p>
+  </div>
+
+  <div class="paragraph">
+    <p>Network is based on a very simple idea and provides a simple clean game experience. I think the visuals work well with the concept and that overall it comes together as a cohesive whole.</p>
+  </div>
 
 </div>
