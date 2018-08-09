@@ -1,134 +1,169 @@
-<div class="titleContainer">
-  <img src="/images/eruption/logo..png" alt="Eruption Logo" height="51px" width="173px">
-  <h1>Eruption Design</h1>
-</div>
+<section class="sectionContainer">
+  <section class="titleContainer">
+    <img src="/images/eruption/logo..png" alt="Eruption Logo" height="51px" width="173px">
+    <h1>Eruption Design</h1>
+  </section>
 
-<div class="gameplay">
-  <div class="title">
-    <h2>Gameplay</h2>
-  </div>
-  <div class="paragraph">
-    <p>The design of Eruption is focussed on making a short, interesting, puzzle game with as much replayability as possible. Several decisions were made to make sure that (especially in speed mode) the game is simple enough to be played very fast, but with enough difficulty to make it interesting. Both modes are simply scored by how far the lava gets without a city being destoyed, the points are representative of the lowest lava position.</p>
-  </div>
-  <div class="images">
-    <div>
-      <img src="/images/eruption/lavamove.png" alt="trench direction" height="200px">
-      <p>Lava movement</p>
-    </div>
-    <div>
-      <img src="/images/eruption/trenches.png" alt="trenches" height="200px">
-      <p>Left, right, and split trenches</p>
-    </div>
-    <div>
-      <img src="/images/eruption/timerrockcity.png" alt="timer rock and city" height="200px">
-      <p>Timer, rocks, and a city</p>
-    </div>
-  </div>
-  <div class="paragraph">
-    <p>The tiling was first prototyped using squares but hexagonal tiles provide a much better, and clearer lava movement dynamic. The hexagonal interlocking pattern can clearly show that the lava has a chance to move left or right when it moves to the next row. This also cleared up the movement design of the lava, as the options for movement were reduced to left, right, or split. The cylinder of hexagons is procedurally generated as the player progresses, with each tile having a specific chance of being set as rock, water, or city. Rocks are very important as they provide obstacles, and without these obstacles the game becomes too simple, with there even being a possibility of redirecting all the lava to a single stream and endlessly continuing the game, so by adding rock tiles where the player cannot build some more thought has to be used to place the trenches. In a similar way to the rocks providing extra obstacles, the water provides targets. When the lava hits a water tile it is slowed down, so that it's movement takes twice as long through that tile, giving the player longer to decide on their next move.
-    </p>
-  </div>
-  <div class="images">
-    <div>
-      <img src="/images/eruption/SS3.png" alt="speed mode" height="300px">
-      <p>Speed mode screenshot</p>
-    </div>
-  </div>
-  <div class="paragraph">
-    <h3>Speed Mode</h3>
-    <p>Speed mode is the simpler of the two game modes, there is no limit on building and the trenches are completed immediately. However, as per the name, the lava in speed mode is faster than the lava in strategy mode and the player must constantly be on the move, checking which cities are in the most danger and planning ahead as much as possible. The lava speeds up as the game goes on, and the layout of the tiles becomes more difficult to overcome (more rocks, more cities). The lava in the lowest position is shown by a ring of darkened tiles around the map so that the player can see if they are dealing with the most advanced lava (and if not they still have to find it). Overall speed mode is frantic and tense that hopefully gives players a quick burst of fun gameplay.</p>
-  </div>
-  <div class="images">
-    <div>
-      <img src="/images/eruption/SS4.png" alt="strategy mode" height="300px">
-      <p>Strategy mode screenshot</p>
-    </div>
-  </div>
-  <div class="paragraph">
-    <h3>Strategy Mode</h3>
-    <p>Strategy mode has more gameplay features than speed mode, this is mainly allowed by the slower speed of the lava. In strategy mode the number of builders is limited to 5, and the time that each trench takes to build is dependent on the ground it is built upon. The screen is a little busier as it must accomodate more features, however it does not feel too crowded. There are also events that take place at set intervals, these can provide a variety of effects, from slowing the lava, collapsing trenches, and creating new lava streams, to halving build times, or incapacitating one builder</p>
-  </div>
-  <div class="images">
-    <div>
-      <img src="/images/eruption/builders.png" alt="builders UI" height="100px">
-      <p>Builders</p>
-    </div>
-    <div>
-      <img src="/images/eruption/eruptiontimer.png" alt="event timer UI" height="100px">
-      <p>Event timer</p>
-    </div>
-    <div>
-      <img src="/images/eruption/groundstatus.png" alt="ground status UI" height="100px">
-      <p>Ground status</p>
-    </div>
-  </div>
-  <div class="paragraph">
-    <p>The builders UI counts down the time until each builder has completed the current trench, the time that this takes for each tile can be seen in the ground status bar, along with the currently selected trench direction. If the player can plan well they can mainly build on the softer ground as their builders will be able to get more done. If all 5 builders are busy no new trenches can be built until one becomes free</p>
-    <p>The event timer counts down until each event. The event is randomly chosen from 6</p>
-    <p>Eruption - new streams of lava are added and the lava is a little faster for a short time</p>
-    <p>Flood - The lava is slowed but some trenches collapse, releasing the lava again</p>
-    <p>Heavy rain - Building times for trenches are slower</p>
-    <p>Trench collapse - Some trenches collapse releasing lava again</p>
-    <p>Overtime - Builders complete trenches faster</p>
-    <p>Injury - One builder is incapacitated</p>
-  </div>
-  <div class="images">
-    <div>
-      <img src="/images/eruption/eruption.png" alt="eruption event" height="200px">
-      <p>Eruption event</p>
-    </div>
-    <div>
-      <img src="/images/eruption/rain.png" alt="Heavy rain event" height="200px">
-      <p>Rain event</p>
-    </div>
-    <div>
-      <img src="/images/eruption/overtime.png" alt="Overtime event" height="200px">
-      <p>Overtime event</p>
-    </div>
-  </div>
-</div>
+  <section class="gameplay">
+    <section class="title">
+      <h2>Gameplay</h2>
+    </section>
+    <hr />
 
-<div class="artsound">
-  <div class="paragraph">
-    <h2>Audio and Visual</h2>
-    <p>The art of the game is simple with a low poly count, I find that this can help to easily allow the player to quickly identify what is on the map as there are only 2 extra features beside colour, and the sharp straight edges of the city is easily recognisable when compared to the round shape of the rocks. The colours of the tiles denote the hardness of the ground (build time in strategy mode, only decorative in speed mode). I am considering altering the games assets so that there is a little more detail in the models while retaining the original shapes, I would create more definition in the trenches and tiles (the trench split model also has a problem with multiple faces in the same position), and also add some effects to make the lava even more visible.</p>
-  </div>
-  <div class="images">
-    <div>
-      <img src="/images/eruption/trenchleft.png" alt="trench left model" height="150px">
-      <p>Trench left model</p>
-    </div>
-    <div>
-      <img src="/images/eruption/trenchright.png" alt="trench right model" height="150px">
-      <p>Trench right model</p>
-    </div>
-    <div>
-      <img src="/images/eruption/trenchsplit.png" alt="trench split model" height="150px">
-      <p>Trench split model</p>
-    </div>
-  </div>
-  <div class="images">
-    <div>
-      <img src="/images/eruption/city.png" alt="eruption event" height="200px">
-      <p>Current city model</p>
-    </div>
-    <div>
-      <img src="/images/eruption/rock.png" alt="Heavy rain event" height="200px">
-      <p>Current rock model</p>
-    </div>
-  </div>
-  <div class="paragraph">
-    <p>The music adds to the tense atmosphere, and the sounds should be easily identifiable to show what is happening both visually and audibly. There is a small sound that occurs when the lava moves and another when trenches complete, giving more cues to the player to understand what is happening. Each event has a small sound (or a larger sound for eruption), and there is a sound that accompanies game over.</p>
-    <p>Throughout the game I reuse the hexagons (as game objects, and menu items), to try to keep a running theme in the game and provide some overarching cohesion. Whether this is achieved or not is questionable</p>
-  </div>
-  <div class="images">
-    <div>
-      <img src="/images/eruption/main.png" alt="Game start image" height="200px">
-      <p>A game just starting out, with updated city models</p>
-    </div>
-  </div>
-  <div class="paragraph">
-    <p>Overall I think that the gameplay is successful, some tweaking could be made to the trench building options, and perhaps the scoring system to give bonuses for certain trench layouts or 'combos'. I think that the look of the game works well, it keeps the simple style but has a bit of definition in the models of the cities (as can be seen from the improvement between the earlier city image and the cities in the gameplay image) and the trenches. The music works quite well and the newer sound effects are a great improvement over the old ones.</p>
-  </div>
+    <section class="paragraph">
+      <p>The design of Eruption is focussed on making a short, interesting, puzzle game with as much replayability as possible. Several decisions were made to make sure that (especially in speed mode) the game is simple enough to be played very fast, but with enough difficulty to make it interesting. Both modes are simply scored by how far the lava gets without a city being destoyed, the points are representative of the lowest lava position.</p>
+    </section>
+    <hr />
 
-</div>
+    <section class="images">
+      <section>
+        <img src="/images/eruption/lavamove.png" alt="trench direction" height="200px">
+        <p>Lava movement</p>
+      </section>
+      <section>
+        <img src="/images/eruption/trenches.png" alt="trenches" height="200px">
+        <p>Left, right, and split trenches</p>
+      </section>
+      <section>
+        <img src="/images/eruption/timerrockcity.png" alt="timer rock and city" height="200px">
+        <p>Timer, rocks, and a city</p>
+      </section>
+    </section>
+    <hr />
+
+    <section class="paragraph">
+      <p>The tiling was first prototyped using squares but hexagonal tiles provide a much better, and clearer lava movement dynamic. The hexagonal interlocking pattern can clearly show that the lava has a chance to move left or right when it moves to the next row. This also cleared up the movement design of the lava, as the options for movement were reduced to left, right, or split. The cylinder of hexagons is procedurally generated as the player progresses, with each tile having a specific chance of being set as rock, water, or city. Rocks are very important as they provide obstacles, and without these obstacles the game becomes too simple, with there even being a possibility of redirecting all the lava to a single stream and endlessly continuing the game, so by adding rock tiles where the player cannot build some more thought has to be used to place the trenches. In a similar way to the rocks providing extra obstacles, the water provides targets. When the lava hits a water tile it is slowed down, so that it's movement takes twice as long through that tile, giving the player longer to decide on their next move.
+      </p>
+    </section>
+    <hr />
+
+    <section class="images">
+      <section>
+        <img src="/images/eruption/SS3.png" alt="speed mode" height="300px">
+        <p>Speed mode screenshot</p>
+      </section>
+    </section>
+    <hr />
+
+    <section class="paragraph">
+      <h3>Game Modes</h3>
+      <p>The game includes a speed mode and a strategy mode. Details of each are covered below. I chose to have 2 modes as during the design and testing I found that changing the speed of the lava had a great effect on the gameplay. The faster the lava the more frantic and exciting the gameplay became, and the slower the lava the less interesting and exciting. However when testing the slower lava I saw the possibility of making the game more strategic, limiting resources for the player and adding additional events during the game. So while the speed mode provides a faster more exciting game of simply diverting the lava as fast as you can, the strategy mode provides something more in depth and thoughtful. I think there is enough difference in the game modes and the experience each provides that both are worthwhile additions.</p>
+    </section>
+    <hr />
+
+    <section class="paragraph">
+      <h3>Speed Mode</h3>
+      <p>Speed mode is the simpler of the two game modes, there is no limit on building and the trenches are completed immediately. However, as per the name, the lava in speed mode is faster than the lava in strategy mode and the player must constantly be on the move, checking which cities are in the most danger and planning ahead as much as possible. The lava speeds up as the game goes on, and the layout of the tiles becomes more difficult to overcome (more rocks, more cities). The lava in the lowest position is shown by a ring of darkened tiles around the map so that the player can see if they are dealing with the most advanced lava (and if not they still have to find it). Overall speed mode is frantic and tense that hopefully gives players a quick burst of fun gameplay.</p>
+    </section>
+    <hr />
+
+    <section class="images">
+      <section>
+        <img src="/images/eruption/SS4.png" alt="strategy mode" height="300px">
+        <p>Strategy mode screenshot</p>
+      </section>
+    </section>
+    <hr />
+
+    <section class="paragraph">
+      <h3>Strategy Mode</h3>
+      <p>Strategy mode has more gameplay features than speed mode, this is mainly allowed by the slower speed of the lava. In strategy mode the number of builders is limited to 5, and the time that each trench takes to build is dependent on the ground it is built upon. The screen is a little busier as it must accomodate more features, however it does not feel too crowded. There are also events that take place at set intervals, these can provide a variety of effects, from slowing the lava, collapsing trenches, and creating new lava streams, to halving build times, or incapacitating one builder.</p>
+    </section>
+    <hr />
+
+    <section class="images">
+      <section>
+        <img src="/images/eruption/builders.png" alt="builders UI" height="100px">
+        <p>Builders</p>
+      </section>
+      <section>
+        <img src="/images/eruption/eruptiontimer.png" alt="event timer UI" height="100px">
+        <p>Event timer</p>
+      </section>
+      <section>
+        <img src="/images/eruption/groundstatus.png" alt="ground status UI" height="100px">
+        <p>Ground status</p>
+      </section>
+    </section>
+    <hr />
+
+    <section class="paragraph">
+      <p>The builders UI counts down the time until each builder has completed the current trench, the time that this takes for each tile can be seen in the ground status bar, along with the currently selected trench direction. If the player can plan well they can mainly build on the softer ground as their builders will be able to get more done. If all 5 builders are busy no new trenches can be built until one becomes free</p>
+      <p>The event timer counts down until each event. The event is randomly chosen from 6</p>
+      <p>Eruption - new streams of lava are added and the lava is a little faster for a short time</p>
+      <p>Flood - The lava is slowed but some trenches collapse, releasing the lava again</p>
+      <p>Heavy rain - Building times for trenches are slower</p>
+      <p>Trench collapse - Some trenches collapse releasing lava again</p>
+      <p>Overtime - Builders complete trenches faster</p>
+      <p>Injury - One builder is incapacitated</p>
+      <p>I used this variety and number of events as there is a good balance of positive and negative effects and I found that each in game event could be based on a logical real world event to make them more recognisable.</p>
+    </section>
+    <hr />
+
+    <section class="images">
+      <section>
+        <img src="/images/eruption/eruption.png" alt="eruption event" height="200px">
+        <p>Eruption event</p>
+      </section>
+      <section>
+        <img src="/images/eruption/rain.png" alt="Heavy rain event" height="200px">
+        <p>Rain event</p>
+      </section>
+      <section>
+        <img src="/images/eruption/overtime.png" alt="Overtime event" height="200px">
+        <p>Overtime event</p>
+      </section>
+    </section>
+  </section>
+  <hr />
+
+  <section class="artsound">
+    <section class="paragraph">
+      <h2>Audio and Visual</h2>
+      <p>The art of the game is simple with a low poly count, I find that this can help to easily allow the player to quickly identify what is on the map as there are only 2 extra features beside colour, and the sharp straight edges of the city is easily recognisable when compared to the round shape of the rocks. The colours of the tiles denote the hardness of the ground (build time in strategy mode, only decorative in speed mode). I added more definition to the trenches and cities, and also added some effects to make the lava even more visible.</p>
+    </section>
+    <hr />
+
+    <section class="images">
+      <section>
+        <img src="/images/eruption/trenchleft.png" alt="trench left model" height="150px">
+        <p>Trench left</p>
+      </section>
+      <section>
+        <img src="/images/eruption/trenchright.png" alt="trench right model" height="150px">
+        <p>Trench right</p>
+      </section>
+    </section>
+
+    <section class="images">
+      <section>
+        <img src="/images/eruption/city.png" alt="eruption event" height="200px">
+        <p>City model</p>
+      </section>
+      <section>
+        <img src="/images/eruption/rock.png" alt="Heavy rain event" height="200px">
+        <p>Rock model</p>
+      </section>
+    </section>
+    <hr />
+
+    <section class="paragraph">
+      <p>The music adds to the tense atmosphere, and the sounds should be easily identifiable to show what is happening both visually and audibly. There is a small sound that occurs when the lava moves and another when trenches complete, giving more cues to the player to understand what is happening. Each event has a small sound (or a larger sound for eruption), and there is a sound that accompanies game over.</p>
+      <p>Throughout the game I reuse the hexagons (as game objects, and menu items), to try to keep a running theme in the game and provide some overarching cohesion.</p>
+    </section>
+    <hr />
+
+    <section class="images">
+      <section>
+        <img src="/images/eruption/main.png" alt="Game start image" height="200px">
+        <p>A game just starting out, with updated city models</p>
+      </section>
+    </section>
+    <hr />
+
+    <section class="paragraph">
+      <p>Overall I think that the gameplay is successful, some tweaking could be made to the trench building options, and perhaps the scoring system to give bonuses for certain trench layouts or 'combos'. I think that the look of the game works well, it keeps the simple style but has a bit of definition in the models of the cities (as can be seen from the improvement between the earlier city image and the cities in the gameplay image) and the trenches. The music works quite well and the newer sound effects are a great improvement over the old ones.</p>
+    </section>
+
+  </section>
+</section>

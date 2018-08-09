@@ -9,25 +9,20 @@
   margin: auto;
 }
 
-.images {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 0;
-  width: 100%;
-}
-
-.paragraph {
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   width: 100%;
+  margin-top: 60px;
 }
 
-.images, div{
-  margin: 10px;
+.menu h2 {
+  margin: 12px;
+}
+
+.menu h2, .menu img {
+  cursor: pointer;
 }

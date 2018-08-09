@@ -5,6 +5,7 @@ import { EruptionComponent } from './eruption/eruption.component';
 import { MigrationComponent } from './migration/migration.component';
 import { SurvivorComponent } from './survivor/survivor.component';
 import { SparkComponent } from './spark/spark.component';
+import { NetworkComponent } from './network/network.component';
 
 import { ERUPTION_ROUTES } from './eruption/eruption.routing';
 import { MIGRATION_ROUTES } from './migration/migration.routing';

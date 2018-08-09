@@ -1,3 +1,15 @@
 <div class="body">
+  <nav>
+    <ul class="nav nav-pills gameHeader">
+      <li [routerLink]="['/home']"><a>Main Menu</a></li>
+      <li [routerLink]="['/games/gamehome']"><a>Game Menu</a></li>
+      <li [routerLink]="['/games/spark/sparkgame']"><a>Spark</a></li>
+      <li [routerLink]="['/games/eruption/eruptiongame']"><a>Eruption</a></li>
+      <li [routerLink]="['/games/network/networkgame']"><a>Network</a></li>
+      <li [routerLink]="['/games/migration/migrationgame']"><a>Migration</a></li>
+      <li [routerLink]="['/games/survivor/survivorgame']"><a>Survivor</a></li>
+      <li [routerLink]="['/web/webhome']" class="webNavButton"><a>Go To Web Menu</a></li>
+    </ul>
+  </nav>
   <router-outlet></router-outlet>
 </div>

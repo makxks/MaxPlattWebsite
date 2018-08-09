@@ -1,9 +1,36 @@
-<h1>Web</h1>
-
 <section *ngIf="this.homeService.selectedWebsite == ''">
-<p>Nothing</p>
+  <h1>Web</h1>
+  <hr/>
+  <p>This is a selection of my websites and applications, the website pages hold more information about each application, and also contain links to the pages themselves and github repos.</p>
+  <p><a [routerLink]="['/web/webhome']">Click here to see more details about all of my websites and applications.</a></p>
 </section>
 
 <section *ngIf="this.homeService.selectedWebsite == 'classtracker'">
-<p>First Leap Lesson App</p>
+  <p>First Leap App</p>
+  <hr />
+  <!-- add screenshots of a few pages -->
+  <p>An application for teachers at an English training school for children in China (First Leap). The company has many different centers across several cities in China and has classes for children as young as 2 years old to children of 12.</p>
+  <p>The application aims to help the International teachers of First Leap in several ways -</p>
+  <ul>
+    <li>Teachers can add information about their own classes and the children in those classes for later reference</li>
+    <li>Give teachers easy access to lesson details and curriculums</li>
+    <li>Teachers can build their own weekly schedules according to their lessons and classes</li>
+    <li>Teachers can create and update lesson details with their own techniques activities and comments for any other teachers across China within First Leap</li>
+  </ul>
+  <p><a routerLinkActive="active" [routerLink]="['/web/classtracker']">Please look here to see more details about the site, a link to the site, and the git repo.</a></p>
+</section>
+
+<section *ngIf="this.homeService.selectedWebsite == 'mprove'">
+  <p>MProve</p>
+  <hr />
+</section>
+
+<section *ngIf="this.homeService.selectedWebsite == 'weather'">
+  <p>Weather App</p>
+  <hr />
+</section>
+
+<section *ngIf="this.homeService.selectedWebsite == 'chapp'">
+  <p>Chapp</p>
+  <hr />
 </section>

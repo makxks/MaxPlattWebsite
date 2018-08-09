@@ -20,6 +20,10 @@
   margin: auto;
 }
 
+.gameplay hr, .artsound hr {
+  width: 60%;
+}
+
 .images {
   display: flex;
   flex-direction: row;
@@ -30,7 +34,7 @@
   width: 100%;
 }
 
-.images, div{
+.images, section{
   margin: 10px;
 }
 
@@ -58,4 +62,8 @@ p {
   position: relative;
   margin: 0;
   width: 100%;
+}
+
+.sectionContainer {
+  margin-top: 0;
 }

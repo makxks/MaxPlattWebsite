@@ -53,8 +53,6 @@ import { SparkHeaderComponent } from './game/spark/sparkheader.component';
 import { SparkDesignComponent } from './game/spark/sparkdesign.component';
 import { SparkGameComponent } from './game/spark/sparkgame.component';
 
-import { RockLimeComponent } from './web/rocklime/rocklime.component';
-
 import { ChatAppComponent } from './web/chapp/chatapp.component';
 
 import { WeatherAppComponent } from './web/weather/weatherapp.component';
@@ -103,7 +101,6 @@ import { ErrorComponent } from './errors/error.component';
 		SparkHeaderComponent,
 		SparkDesignComponent,
 		SparkGameComponent,
-		RockLimeComponent,
 		ChatAppComponent,
 		WeatherAppComponent,
 		ErrorComponent
