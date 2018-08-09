@@ -57,6 +57,10 @@ import { ChatAppComponent } from './web/chapp/chatapp.component';
 
 import { WeatherAppComponent } from './web/weather/weatherapp.component';
 
+import { ClassTrackerAppComponent } from './web/classtracker/classtrackerapp.component';
+
+import { MProveComponent } from './web/mprove/mprove.component';
+
 import { routing } from './app.routing';
 
 import { ErrorService } from './errors/error.service';
@@ -103,6 +107,8 @@ import { ErrorComponent } from './errors/error.component';
 		SparkGameComponent,
 		ChatAppComponent,
 		WeatherAppComponent,
+		ClassTrackerAppComponent,
+		MProveComponent,
 		ErrorComponent
 	],
 	imports: [
