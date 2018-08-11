@@ -1,7 +1,25 @@
+p:last-child {
+  margin-top: 40px;
+}
+
 section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:  auto;
+  width: 80%;
   text-align: center;
 }
 
-p:last-child {
-  margin-top: 40px;
+section p {
+  margin: 10px;
+}
+
+section ul li {
+  margin: 5px;
+}
+
+section hr {
+  width: 60%;
 }

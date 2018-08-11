@@ -55,8 +55,6 @@ import { SparkGameComponent } from './game/spark/sparkgame.component';
 
 import { ChatAppComponent } from './web/chapp/chatapp.component';
 
-import { WeatherAppComponent } from './web/weather/weatherapp.component';
-
 import { ClassTrackerAppComponent } from './web/classtracker/classtrackerapp.component';
 
 import { MProveComponent } from './web/mprove/mprove.component';
@@ -106,7 +104,6 @@ import { ErrorComponent } from './errors/error.component';
 		SparkDesignComponent,
 		SparkGameComponent,
 		ChatAppComponent,
-		WeatherAppComponent,
 		ClassTrackerAppComponent,
 		MProveComponent,
 		ErrorComponent

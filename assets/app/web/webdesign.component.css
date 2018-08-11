@@ -1,0 +1,61 @@
+.design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top:0;
+  width: 75%;
+  margin: auto;
+}
+
+.design hr {
+  width: 60%;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.images, section{
+  margin: 10px;
+}
+
+h1 h3 {
+  padding: 15px;
+}
+
+p {
+  padding: 10px;
+}
+
+.title {
+  margin: 10px;
+}
+
+.paragraph {
+  margin: 10px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.sectionContainer {
+  margin: 0;
+  margin-top: 45px;
+  float: right;
+  width: 90%;
+}

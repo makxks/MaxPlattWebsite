@@ -1,3 +1,32 @@
 .body {
   height: 100%;
 }
+
+nav {
+  width: 10%;
+  float: left;
+}
+
+.webHeader {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+  margin-top: 50px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.webHeader li {
+  min-width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gameNavButton {
+  margin-top: 30px;
+}

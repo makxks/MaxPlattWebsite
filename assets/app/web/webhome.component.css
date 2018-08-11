@@ -30,3 +30,20 @@
 p {
   margin: 10px;
 }
+
+h1 {
+  margin: 12px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.menu h2 {
+  margin: 12px;
+}

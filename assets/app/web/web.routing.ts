@@ -10,7 +10,6 @@ export const WEB_ROUTES: Routes = [
 	{ path: '' , redirectTo: 'webhome', pathMatch: 'full' },
 	{ path: 'webhome', component: WebHomeComponent },
 	{ path: 'chatapp', component: ChatAppComponent },
-	{ path: 'weather', component: WeatherAppComponent },
 	{ path: 'classtracker', component: ClassTrackerAppComponent},
 	{ path: 'mprove', component: MProveComponent}
 ]

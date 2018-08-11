@@ -1,6 +1,6 @@
 iframe {
   width: 85%;
-  height: 900px;
+  height: 90%;
   padding: 10px 0;
   margin: 10px 0;
 }
@@ -12,4 +12,40 @@ iframe {
   width: 100%;
   position: relative;
   margin: 0;
+  height: 450px;
+}
+
+.row {
+  margin-left: 16.66666667%;
+  display: flex;
+  width: 66.666667%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+div hr {
+  width: 100%;
+}
+
+p {
+  padding: 10px;
+}
+
+a {
+  color: darkred;
+  text-decoration: underline;
+}
+
+a:link {
+  color: darkred;
+}
+
+a:hover {
+  color: red;
 }

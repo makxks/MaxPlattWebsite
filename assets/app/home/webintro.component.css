@@ -19,3 +19,7 @@ section ul li {
 section hr {
   width: 60%;
 }
+
+#classtrackerimage {
+  border: 1px solid #eee;
+}

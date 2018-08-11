@@ -1,4 +1,36 @@
 .gamewindow {
+	width: 95%;
+	margin:auto;
+  margin-top: 0;
+}
+
+.game {
+  width: 950px;
+  margin: auto;
+}
+
+h1 {
+  margin: 5px;
+}
+
+p {
+  margin: 6px;
+}
+
+a {
+  color: darkred;
+  text-decoration: underline;
+}
+
+a:link {
+  color: darkred;
+}
+
+a:hover {
+  color: red;
+}
+
+.gamewindow {
 	width: 100%;
 	margin:auto;
   margin-top: 10px;
@@ -6,6 +38,10 @@
 
 .game {
   width: 990px;
+  margin: auto;
+}
+.introduction {
+  width: 75%;
   margin: auto;
 }
 

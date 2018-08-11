@@ -1,3 +1,13 @@
 <div class="body">
+  <nav>
+    <ul class="nav nav-pills webHeader">
+      <li [routerLink]="['/home']"><a>Main Menu</a></li>
+      <li [routerLink]="['/web/webhome']"><a>Web Menu</a></li>
+      <li [routerLink]="['/web/classtracker']"><a>First Leap Class Tracker</a></li>
+      <li [routerLink]="['/web/mprove']"><a>MProve</a></li>
+      <li [routerLink]="['/web/chatapp']"><a>Chapp</a></li>
+      <li [routerLink]="['/games/gamehome']" class="hameNavButton"><a>Go To Game Menu</a></li>
+    </ul>
+  </nav>
   <router-outlet></router-outlet>
 </div>
