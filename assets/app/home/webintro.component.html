@@ -30,11 +30,6 @@
   <p><a routerLinkActive="active" [routerLink]="['/web/classtracker']">Please look here to see more details about the site, a link to the site, and the git repo.</a></p>
 </section>
 
-<section *ngIf="this.homeService.selectedWebsite == 'weather'">
-  <h1>Weather App</h1>
-  <hr />
-</section>
-
 <section *ngIf="this.homeService.selectedWebsite == 'chapp'">
   <h1>Chapp</h1>
   <hr />

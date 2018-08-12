@@ -2,52 +2,68 @@
   <section class="titleContainer">
     <h1><a href="http://class-tracker.herokuapp.com/">First Leap Class Tracker</a></h1>
     <p><a href="https://github.com/makxks/ClassTracker">Github repo</a></p>
+    <p>*The lesson information on this website is owned by first leap and as such I cannot publicly provide any way to access it. You can download and run it locally<
   </section>
 
   <section class="design">
     <section class="title">
-      <p>An app for International teachers at First Leap training schools in China to manage and track their classes and lessons.</p>
+      <p>An MEAN (Mongo, Express, Angular, Node) app for International teachers at First Leap training schools in China to manage and track their classes and lessons.</p>
     </section>
     <hr />
 
     <section class="paragraph">
-      <p></p>
+      <h2>Basic Functionality</h2>
     </section>
     <hr />
 
     <section class="images">
       <section>
-        <img src="" alt="" height="200px">
-        <p></p>
+        <img src="/images/classtracker/add-class-form-full..png" alt="Add class form" height="200px">
+        <p>Form for adding a class</p>
       </section>
       <section>
-        <img src="" alt="" height="200px">
-        <p></p>
+        <img src="/images/classtracker/new-class..png" alt="A newly added class" height="200px">
+        <p>A newly added class with no kids or lessons. Image show all button controls available for a new class.</p>
+      </section>
+    </section>
+
+    <section class="paragraph">
+      <h3>Classes and Lessons</h3>
+      <p>The two images above show the basic functionalities of the app. The primary aim was to provide a way for teachers to better track their classes while also adding an easy way for teachers to share their own ideas for lessons and activities with all others easily. To achieve this I first added models and routes for classes and lessons, and then for kids so that they could be added to each class, in case there was anything teachers needed to keep track of in that regard. I used angular models to retain all previously filled in information which was especially important for editing lessons to add new details so that users did not have to worry about anything being lost. The images below show the forms for adding kids and lessons to existing classes and for adding a new lesson to the lesson list.</p>
+      <p>I provided as many links between relevant information as I could. Lessons on the schedule link either to the class that they belong to, or the lesson to be taught in the case of classes that do not belong to that teacher. The lessons in the curriculum pages also link to the lesson details. Once a lesson is added to a class it is also displayed on the class page along with any other classes that have been added to that class from the last 2 weeks (after 2 weeks those lessons are automatically deleted from the class by the Mongo database).</p>
+    </section>
+
+    <section class="images">
+      <section>``
+        <img src="/images/classtracker/add-kid..png" alt="Add kid form" height="200px">
+        <p>Form for adding a child to a class</p>
+      </section>
+      <section>
+        <img src="/images/classtracker/add-weekly-lesson..png" alt="Add weekly lesson form" height="200px">
+        <p>Form for adding a lesson to a class</p>
+      </section>
+      <section>
+        <img src="/images/classtracker/add-lesson..png" alt="Add lesson form" height="200px">
+        <p>Form for adding a lesson</p>
       </section>
     </section>
     <hr />
 
     <section class="paragraph">
-      <h3></h3>
-      <p></p>
+      <h3>The Schedule</h3>
+      <p>The schedule takes all classes added by a teacher, sorts them into the correct order according to time, then divides them between the weeks and days that they belong to. 3 different weeks can be displayed, last week, this week, and next week. This allows teachers to check previous classes and look ahead if they have added any future classes. Data for the classes in the schedule is now stored inside the relevant service so that (unless the data needs to be refreshed after a change) there is no need to load again. This has greatly improved the speed at which users can move around the app as the schedule page is the most often visited page, and previously it took a while for each lesson and their details to be loaded and then sorted into the right groups to be displayed on the correct day at the correct time.</p>
     </section>
-    <hr />
 
     <section class="images">
       <section>
-        <img src="" alt="" height="200px">
-        <p></p>
+        <img src="/images/classtracker/schedule..png" alt="The schedule" height="200px">
+        <p>Schedule display with 1 lesson added</p>
       </section>
     </section>
     <hr />
-
     <section class="paragraph">
-      <h3></h3>
-      <p></p>
-    </section>
-    <hr />
-    <section class="paragraph">
-      <p></p>
+      <p>So far I am happy with the way the application functions. I worked on this while also working for First Leap as a teacher and I can say it has been found very useful by the colleagues who used it, enabling them to more quickly check their lesson details and check for any ideas from others.</p>
+      <p>I am currently looking into excel4node as I hope to add the ability to use the schedule to print out a copy of the schedule with some details so that it can be taken into classrooms as a teaching aid. I am also preparing the site (forms and models and lesson lists etc.) for the release of a new curriculum by First Leap.</p>
     </section>
 
   </section>
