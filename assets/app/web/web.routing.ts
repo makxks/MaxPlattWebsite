@@ -2,7 +2,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { WebHomeComponent } from './webhome.component';
 import { ChatAppComponent } from './chapp/chatapp.component';
-import { WeatherAppComponent } from './weather/weatherapp.component';
 import { ClassTrackerAppComponent } from './classtracker/classtrackerapp.component';
 import { MProveComponent } from './mprove/mprove.component';
 

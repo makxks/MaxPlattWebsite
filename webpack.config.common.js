@@ -5,27 +5,29 @@ module.exports = {
 		'app': './assets/app/main.ts'
 	},
 
+	mode: 'development',
+
 	resolve: {
 		extensions: ['.js', '.ts']
 	},
 
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.ts$/,
-				loaders: [
-				'awesome-typescript-loader', 
-				'angular2-template-loader', 
+				use: [
+				'awesome-typescript-loader',
+				'angular2-template-loader',
 				'angular2-router-loader'
 				]
 			},
 			{
 				test: /\.html$/,
-				loaders: 'html'
+				use: 'html-loader'
 			},
 			{
 				test: /\.css$/,
-				loader: 'raw'
+				use: 'raw-loader'
 			}
 		]
 	},
