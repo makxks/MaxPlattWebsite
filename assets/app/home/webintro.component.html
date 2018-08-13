@@ -2,12 +2,15 @@
   <h1>Web</h1>
   <hr/>
   <p>This is a selection of my websites and applications, the website pages hold more information about each application, and also contain links to the pages themselves and github repos.</p>
-  <p>Most of the applications use Angular (now Angular 6+ after upgrading), along with Express, MongoDB, and of course Node, for a MEAN stack. There are also 1 or two applications that use React instead of Angular (MERN stack). These applications mainly target browsers (both desktop and mobile), however in the future I would like to develop some applications across a broader spectrum of targets and I have some ideas for trying out some JS, C++ or C#/.NET to make something that targets browsers, mobile applications and desktop applications. I find the variety of approaches possible very interesting and I really enjoy the feeling of solving some of the problems involved and getting things to work exactly as I planned.</p>
+  <p>Most of the applications use Angular (now Angular 6+ after upgrading), along with Express, MongoDB, and of course Node, for a MEAN stack. There are also 1 or two applications that use React instead of Angular (MERN stack). These applications mainly target browsers (both desktop and mobile).</p>
+  <p>In the future I would like to develop some applications across a broader spectrum of targets and I have some ideas for trying out some JS, C++ or C#/.NET to make something that targets browsers, mobile applications and desktop applications.</p>
+  <p>I find the variety of approaches possible very interesting and I really enjoy the feeling of solving some of the problems involved and getting things to work exactly as I planned.</p>
   <p><a [routerLink]="['/web/webhome']">Click here to see more details about all of my websites and applications.</a></p>
 </section>
 
 <section *ngIf="this.homeService.selectedWebsite == 'classtracker'">
-  <h1>First Leap App</h1>
+  <img src="/images/FLLogo..png" alt="First Leap logo" height="50px">
+  <h1>First Leap Class Tracker</h1>
   <hr />
   <img class="screenshot" src="/images/classtracker/new-class..png" alt="class-tracker screenshot" height="250px">
   <p>A screenshot of one of the class pages</p>
@@ -24,11 +27,16 @@
 </section>
 
 <section *ngIf="this.homeService.selectedWebsite == 'mprove'">
-  <h1>MProve</h1>
+  <img src="/images/mprove/mprove-logo..png" alt="MProve logo" height="50px">
+  <h1>MProve target and reward tracking</h1>
   <hr />
   <img class="screenshot" src="/images/mprove/first-page..png" alt="First page of MProve" height="200px">
+  <p>The front page of MProve</p>
+  <hr />
   <p>A personal improvement and incentivisation application.</p>
   <p>Add tasks or targets for yourself and give them points values. Add rewards that you can claim for yourself with those points.</p>
+  <p>The aim of the application is to help people achieve long standing targets, especially those that they have found difficult to commit to.</p>
+  <p>To do this users are able to add points values to both targets and rewards and then claim those rewards for themselves once they have enough points.</p>
   <p><a routerLinkActive="active" [routerLink]="['/web/mprove']">Please look here to see more details about the site, a link to the site, and the git repo.</a></p>
 </section>
 

@@ -13,9 +13,20 @@
   <hr />
 
   <div class="menu">
-    <h2><a [routerLink]="['/web/classtracker']">First Leap App - Class and Lesson tracking for teachers</a></h2>
-    <h2><a [routerLink]="['/web/mprove']">MProve - Personal targets and rewards</a></h2>
-    <h2><a [routerLink]="['/web/chatapp']">Chapp - Instant messaging and task management</a></h2>
+    <div class="menuitem">
+      <img [routerLink]="['/web/classtracker']" src="/images/FLLogo..png" alt="First Leap logo" height="75px">
+      <h3>Class and lesson tracking for teachers at First Leap in China</h3>
+    </div>
+
+    <div class="menuitem">
+      <img [routerLink]="['/web/mprove']" src="/images/mprove/mprove-logo..png" alt="MProve logo" height="60px">
+      <h3>Personal targets and rewards</h3>
+    </div>
+
+    <div class="menuitem">
+      <h2><a [routerLink]="['/web/chatapp']">Chapp - No Logo Yet</a></h2>
+      <h3>Instant messaging and task management</h3>
+    </div>
   </div>
 
 </div>

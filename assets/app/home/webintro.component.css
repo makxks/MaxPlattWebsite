@@ -23,3 +23,7 @@ section hr {
 .screenshot {
   border: 1px solid #eee;
 }
+
+h1 {
+  margin: 10px;
+}
