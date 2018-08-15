@@ -27,3 +27,12 @@ section hr {
 h1 {
   margin: 10px;
 }
+
+.subsection {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

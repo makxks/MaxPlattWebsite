@@ -29,12 +29,12 @@
 		],
 
 		"types": [
-            "node",
-						"core-js"
-         ],
-         "typeRoots": [
-            "../node_modules/@types"
-         ]
+      "node",
+			"core-js"
+     ],
+     "typeRoots": [
+      "../node_modules/@types"
+     ]
 	},
 	"exclude": [
 		"node_modules",

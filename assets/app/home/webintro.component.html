@@ -1,49 +1,58 @@
 <section *ngIf="this.homeService.selectedWebsite == ''">
   <h1>Web</h1>
   <hr/>
-  <p>This is a selection of my websites and applications, the website pages hold more information about each application, and also contain links to the pages themselves and github repos.</p>
-  <p>Most of the applications use Angular (now Angular 6+ after upgrading), along with Express, MongoDB, and of course Node, for a MEAN stack. There are also 1 or two applications that use React instead of Angular (MERN stack). These applications mainly target browsers (both desktop and mobile).</p>
-  <p>In the future I would like to develop some applications across a broader spectrum of targets and I have some ideas for trying out some JS, C++ or C#/.NET to make something that targets browsers, mobile applications and desktop applications.</p>
-  <p>I find the variety of approaches possible very interesting and I really enjoy the feeling of solving some of the problems involved and getting things to work exactly as I planned.</p>
-  <p><a [routerLink]="['/web/webhome']">Click here to see more details about all of my websites and applications.</a></p>
+  <section class="subsection">
+    <p>This is a selection of my websites and applications, the website pages hold more information about each application, and also contain links to the pages themselves and github repos.</p>
+    <p>Most of the applications use Angular (now Angular 6+ after upgrading), along with Express, MongoDB, and of course Node, for a MEAN stack. There are also 1 or two applications that use React instead of Angular (MERN stack). These applications mainly target browsers (both desktop and mobile).</p>
+    <p>In the future I would like to develop some applications across a broader spectrum of targets and I have some ideas for trying out some JS, C++ or C#/.NET to make something that targets browsers, mobile applications and desktop applications.</p>
+    <p>I find the variety of approaches possible very interesting and I really enjoy the feeling of solving some of the problems involved and getting things to work exactly as I planned.</p>
+    <p><a [routerLink]="['/web/webhome']">Click here to see more details about all of my websites and applications.</a></p>
+  </section>
 </section>
 
 <section *ngIf="this.homeService.selectedWebsite == 'classtracker'">
   <img src="/images/FLLogo..png" alt="First Leap logo" height="50px">
   <h1>First Leap Class Tracker</h1>
   <hr />
-  <img class="screenshot" src="/images/classtracker/new-class..png" alt="class-tracker screenshot" height="250px">
-  <p>A screenshot of one of the class pages</p>
-  <hr />
-  <p>An application for teachers at an English training school for children in China (First Leap). The company has many different centers across several cities in China and has classes for children as young as 2 years old to children of 12.</p>
-  <p>The application aims to help the International teachers of First Leap in several ways -</p>
-  <ul>
-    <li>Teachers can add information about their own classes and the children in those classes for later reference</li>
-    <li>Give teachers easy access to lesson details and curriculums</li>
-    <li>Teachers can build their own weekly schedules according to their lessons and classes</li>
-    <li>Teachers can create and update lesson details with their own techniques activities and comments for any other teachers across China within First Leap</li>
-  </ul>
-  <p><a routerLinkActive="active" [routerLink]="['/web/classtracker']">Please look here to see more details about the site, a link to the site, and the git repo.</a></p>
+  <section class="subsection">
+    <img class="screenshot" src="/images/classtracker/new-class..png" alt="class-tracker screenshot" height="250px">
+    <p>A screenshot of one of the class pages</p>
+    <hr />
+    <p>An application for teachers at an English training school for children in China (First Leap). The company has many different centers across several cities in China and has classes for children as young as 2 years old to children of 12.</p>
+    <p>The application aims to help the International teachers of First Leap in several ways -</p>
+    <ul>
+      <li>Teachers can add information about their own classes and the children in those classes for later reference</li>
+      <li>Give teachers easy access to lesson details and curriculums</li>
+      <li>Teachers can build their own weekly schedules according to their lessons and classes</li>
+      <li>Teachers can create and update lesson details with their own techniques activities and comments for any other teachers across China within First Leap</li>
+    </ul>
+    <p><a routerLinkActive="active" [routerLink]="['/web/classtracker']">Please look here to see more details about the site, a link to the site, and the git repo.</a></p>
+  </section>
 </section>
 
 <section *ngIf="this.homeService.selectedWebsite == 'mprove'">
   <img src="/images/mprove/mprove-logo..png" alt="MProve logo" height="50px">
   <h1>MProve target and reward tracking</h1>
   <hr />
-  <img class="screenshot" src="/images/mprove/first-page..png" alt="First page of MProve" height="200px">
-  <p>The front page of MProve</p>
-  <hr />
-  <p>A personal improvement and incentivisation application.</p>
-  <p>Add tasks or targets for yourself and give them points values. Add rewards that you can claim for yourself with those points.</p>
-  <p>The aim of the application is to help people achieve long standing targets, especially those that they have found difficult to commit to.</p>
-  <p>To do this users are able to add points values to both targets and rewards and then claim those rewards for themselves once they have enough points.</p>
-  <p><a routerLinkActive="active" [routerLink]="['/web/mprove']">Please look here to see more details about the site, a link to the site, and the git repo.</a></p>
+  <section class="subsection">
+    <img class="screenshot" src="/images/mprove/first-page..png" alt="First page of MProve" height="200px">
+    <p>The front page of MProve</p>
+    <hr />
+    <p>A personal improvement and incentivisation application.</p>
+    <p>Add tasks or targets for yourself and give them points values. Add rewards that you can claim for yourself with those points.</p>
+    <p>The aim of the application is to help people achieve long standing targets, especially those that they have found difficult to commit to.</p>
+    <p>To do this users are able to add points values to both targets and rewards and then claim those rewards for themselves once they have enough points.</p>
+    <p><a routerLinkActive="active" [routerLink]="['/web/mprove']">Please look here to see more details about the site, a link to the site, and the git repo.</a></p>
+  </section>
 </section>
 
 <section *ngIf="this.homeService.selectedWebsite == 'chapp'">
   <h1>Chapp</h1>
   <hr />
-  <p>A task based instant messaging application.</p>
-  <p>Application to manage and communicate about tasks within teams.</p>
-  <p><a routerLinkActive="active" [routerLink]="['/web/chatapp']">Please look here to see more details about the site, a link to the site, and the git repo.</a></p>
+  <section class="subsection">
+    <p>A task based instant messaging application.</p>
+    <p>Application to manage and communicate about tasks within teams.</p>
+    <p>This combines an instant messaging application with a task management application. Tasks can be set within groups while simultaneously being assigned to a member of the group who will be responsible for that task. The task then appears in the group task list and the personal task list of the responsible member.</p>
+    <p><a routerLinkActive="active" [routerLink]="['/web/chatapp']">Please look here to see more details about the site, a link to the site, and the git repo.</a></p>
+  </section>
 </section>
